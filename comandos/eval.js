@@ -7,7 +7,7 @@
         let fumantelindao = args.join(" ");
         let fumantetotoso = eval(fumantelindao);
 
-        if (typeof nytotoso !== 'string')
+        if (typeof fumantetotoso !== 'string')
             fumantetotoso = require('util').inspect(fumantetotoso, { depth: 0 });
         let embed = new Discord.RichEmbed()
         .setAuthor('Eval')
