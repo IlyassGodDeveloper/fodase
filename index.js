@@ -2,7 +2,7 @@ const http = require('http');
 const express = require('express');
 const app = express();
 app.get("/", (request, response) => {
-  console.log(Date.now() + " Ping Recebido");
+  console.log(Date.now() + " Ping recebido");
   response.sendStatus(200);
 });
 app.listen(process.env.PORT);
