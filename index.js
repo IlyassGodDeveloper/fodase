@@ -90,8 +90,6 @@ client.on('guildDelete', guild => {
     canal.send(embedsaida)
 });
 
-    client.user.setStatus('dnd')
-
 client.on("ready", () => {
     console.log(`Bot foi iniciado, com ${client.users.size} usuários, em ${client.channels.size} canais, em ${client.guilds.size} servidores.`); 
     client.user.setPresence({ game: { name: config.Status, type: 'STREAMING', url: 'https://www.twitch.tv/fumante1533'}});
