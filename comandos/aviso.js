@@ -22,7 +22,7 @@ let mensagem = args.join(" ")
     })
 }catch(err){
 
-    return message.reply("**:chegay: *\`Ocorreu um erro ao enviar a mensagem. Tente novamente.\`\*")
+    return message.reply("**<a:sinomdp:603053194351869960> *\`Ocorreu um erro ao enviar a mensagem. Tente novamente.\`\*")
 
    }
     message.channel.send("*\`Mensagem enviada para\`\* ***`" + membros + "`*** *\`membros\`\*")

@@ -11,7 +11,7 @@ exports.run = async (client, message, args) => { // eslint-disable-line no-unuse
 
 
 } catch (err) {
-    message.reply('**<a:FBTriste:594960155607695374> | ${message.author} Por algum motivo eu não tenho permissão de criar convites nesse servidor.**')
+    message.reply('**<a:sinomdp:603053194351869960> | Por algum motivo eu não tenho permissão de criar convites nesse servidor.**')
    }
 }
 
