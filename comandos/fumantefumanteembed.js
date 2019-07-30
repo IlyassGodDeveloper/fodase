@@ -6,7 +6,7 @@ message.delete()
 var separador = message.content.split("|")
 const embed = new Discord.RichEmbed()
 .setTitle(separador[1])
-.setColor("BLACK")
+.setColor("#ff47ec")
 .setDescription(separador[2])
 .setImage(separador[3])
 let servidores = client.guilds.size

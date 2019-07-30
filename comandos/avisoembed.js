@@ -6,7 +6,7 @@ exports.run = async (bot, message, args) => {
     var separador = message.content.split("|")
     const Embed = new Discord.RichEmbed()
     .setTitle(separador[1])
-    .setColor("BLACK")
+    .setColor("RANDOM")
     .setDescription(separador[2])
     .setImage(separador[3])
     message.channel.send(Embed)

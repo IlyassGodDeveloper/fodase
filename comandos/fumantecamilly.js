@@ -22,5 +22,5 @@ const larinha = new Discord.RichEmbed()
 .addField('<:7774:593646210187919380> Me adicione em seu servidor:', `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=594324696099717122&permissions=2146958847&scope=bot)**`)
 .addField('Caso você esteja pensando:', `"Nossa ela tem permissão de adm ela vai derrubar meu servidor."\nSe estiver com medo é só tirar as minhas permissões pois preciso só das permissões de:\nLer e escrever mensagens.`)
 .addField('Use l!ajuda para saber mais.', `** **`)
-.setColor('PURPLE')
+.setColor('#ff47ec')
 .setTimestamp();

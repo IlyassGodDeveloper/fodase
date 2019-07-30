@@ -12,7 +12,7 @@
         let embed = new Discord.RichEmbed()
         .setAuthor('Eval')
         .setDescription('⊹⊱•••《 ✮ ✮ ✮ 》•••⊰⊹')
-        .setColor('BLACK')
+        .setColor('#ff47ec')
         .addField('Entrada', fumantelindao)
         .addField(' Saida',  fumantetotoso)
 

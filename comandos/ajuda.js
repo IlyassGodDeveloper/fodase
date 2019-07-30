@@ -19,5 +19,5 @@ const ajuda = new Discord.RichEmbed()
 `» c!lock e c!unlock - Tranca e destranca o chat.\n\n` +
 `» c!convite - Mostra o meu convite.`)
 .setThumbnail(client.user.avatarURL)
-.setColor("PURPLE")
+.setColor("#ff47ec")
 .setTimestamp();

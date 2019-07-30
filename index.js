@@ -100,3 +100,8 @@ fs.readdir("./eventos/", (err, files) => {
         client.on(eventName, (...args) => eventFunction.run(client, ...args));
     });
 })
+
+const errado = new Discord.RichEmbed()
+.setTitle(`Erro!`, client.user.avatarURL)
+.setDescription(`🛑 | Comando inexistente ou utilizado de maneira incorreta!`)
+.setFooter()
