@@ -71,6 +71,11 @@ client.on("message", (message) => {
  
 });
 
+const errado = new Discord.RichEmbed()
+.setTitle(`Erro!`, client.user.avatarURL)
+.setDescription(`🛑 | Comando inexistente ou utilizado de maneira incorreta!`)
+.setFooter(`${message.author.username}`, message.author.displayAvatarURL`)
+
 client.on("ready", () => {
     console.log(`Bot foi iniciado, com ${client.users.size} usuários, em ${client.channels.size} canais, em ${client.guilds.size} servidores.`); 
     client.user.setPresence({ game: { name: config.Status, type: 'STREAMING', url: 'https://www.twitch.tv/fumante1533'}});
@@ -100,8 +105,3 @@ fs.readdir("./eventos/", (err, files) => {
         client.on(eventName, (...args) => eventFunction.run(client, ...args));
     });
 })
-
-const errado = new Discord.RichEmbed()
-.setTitle(`Erro!`, client.user.avatarURL)
-.setDescription(`🛑 | Comando inexistente ou utilizado de maneira incorreta!`)
-.setFooter()
