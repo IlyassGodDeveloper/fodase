@@ -59,10 +59,9 @@ client.on("ready", () => {
 let status = [
   { name: `Sexo pra você`, type: 'STREAMING', url: 'https://www.twitch.tv/fumante1533'},
   { name: `Prazer na cama`, type: 'STREAMING', url: 'https://www.twitch.tv/fumante1533'},
-  { name: `Meu prefixo é: g!`, type: 'STREAMING', url: 'https://www.twitch.tv/fumante1533'},
+  { name: `Meu prefixo é: c!`, type: 'STREAMING', url: 'https://www.twitch.tv/fumante1533'},
   { name: `Toda molhadinha pra você`, type: 'STREAMING', url: 'https://www.twitch.tv/fumante1533'},
   { name: `Amor para você`, type: 'STREAMING', url: 'https://www.twitch.tv/fumante1533'},
-  { name: `Meu criador: Fumante`, type: 'STREAMING', url: 'https://www.twitch.tv/fumante1533'}
 ]
 
 
