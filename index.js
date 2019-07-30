@@ -23,6 +23,7 @@ const client = new Discord.Client({
 });
 const config = require("./config.json")
 const { Client, Util } = require('discord.js');
+const active = new Map();
 var token = config.token
 var prefix = config.prefix
 var dono = config.dono
@@ -48,8 +49,27 @@ client.on("message", (message) => {
         if (err.code == "MODULE_NOT_FOUND") return;
         console.error(err);
     }
-    
-})
+   
+    try {
+
+
+
+        let ops = {
+            ownerID: dono,
+            active: active,
+            aspasT: "```"
+        }
+
+        let commandFile = require (`./comandos/${command}.js`);
+       commandFile.run(client, message, args, ops);
+
+    } catch (e) {
+        console.log(e.stack);
+         message.reply("🛑 | Comando inexistente ou utilizado de maneira incorreta!");
+    } 
+
+ 
+});
 
 client.on("ready", () => {
     console.log(`Bot foi iniciado, com ${client.users.size} usuários, em ${client.channels.size} canais, em ${client.guilds.size} servidores.`); 
