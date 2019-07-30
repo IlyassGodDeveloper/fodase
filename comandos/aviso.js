@@ -22,11 +22,10 @@ let mensagem = args.join(" ")
     })
 }catch(err){
 
-    return message.reply("**<a:sinomdp:603053194351869960> *\`Ocorreu um erro ao enviar a mensagem. Tente novamente.\`\*")
+    return message.reply("*\`Ocorreu um erro ao enviar a mensagem. Tente novamente.\`\*")
 
    }
-    message.channel.send("*\`Mensagem enviada para\`\* ***`" + membros + "`*** *\`membros\`\*")
-    message.channel.send("**`Mensagem a ser enviada:`\n**" + mensagem)
+    message.channel.send(`**${message.author} Sua mensagem sendo enviada para**` + membros + `usuários**`)
 }
 module.exports.help = {
 name: "aviso"

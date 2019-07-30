@@ -1,4 +1,6 @@
 var Discord = require('discord.js')
+const client = new Discord.Client();
+
 module.exports.run = (client,message,args)=>{
 
 message.channel.send(ajuda)
@@ -16,5 +18,6 @@ const ajuda = new Discord.RichEmbed()
 `» c!cc - Cria um convite permanente do servidor.\n\n` +
 `» c!lock e c!unlock - Tranca e destranca o chat.\n\n` +
 `» c!convite - Mostra o meu convite.`)
+.setThumbnail(client.user.avatarURL)
 .setColor("PURPLE")
 .setTimestamp();
