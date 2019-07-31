@@ -65,16 +65,16 @@ client.on("message", (message) => {
 
     } catch (e) {
         console.log(e.stack);
-         message.reply("🛑 | Comando inexistente ou utilizado de maneira incorreta!");
+         message.reply(errado);
     } 
 
- 
-});
-
+  
 const errado = new Discord.RichEmbed()
 .setTitle(`Erro!`, client.user.avatarURL)
 .setDescription(`🛑 | Comando inexistente ou utilizado de maneira incorreta!`)
-.setFooter(`${message.author.username}`, message.author.displayAvatarURL`)
+.setFooter(`${message.author.username}`, message.author.displayAvatarURL);
+
+});
 
 client.on("ready", () => {
     console.log(`Bot foi iniciado, com ${client.users.size} usuários, em ${client.channels.size} canais, em ${client.guilds.size} servidores.`); 
