@@ -23,9 +23,6 @@ const client = new Discord.Client({
 });
 const config = require("./config.json")
 const { Client, Util } = require('discord.js');
-const active = new Map();
-const ownerID = '290363866586546176';
-const bot = new Discord.Client();
 var token = config.token
 var prefix = config.prefix
 var dono = config.dono
@@ -33,47 +30,26 @@ var dono = config.dono
 client.login(token)
 
 client.on("message", (message) => {
-  let msg = message.content.toLowerCase();
-  if (message.author.bot) return undefined;
-  let user = message.author;
-  bot.uptime = Date.now();
 
- 
+    if (message.channel.type == "dm") return;
+    if (message.author.bot) return;
+    if (!message.content.startsWith(prefix)) return;
 
-  if (message.content.indexOf(bot.prefix) !== 0) return;
-    let args = message.content.slice(prefix.length).trim().split(' ');
-    let cmd = args.shift().toLowerCase();
-
-    if(message.author.bot) return;
-    if(message.channel.type === "dm") return;
-    if(!message.content.startsWith(prefix)) return;
-  
     let command = message.content.split(" ")[0];
     command = command.slice(prefix.length);
-  
-  try {
 
-        let ops = {
-            ownerID: ownerID,
-            active: active,
-            aspasT: "```"
-        }
+    let args = message.content.split(" ").slice(1);
 
-        let commandFile = require (`./comandos/${command}.js`);
-       commandFile.run(client, message, args, ops);
+    try {
+        let commandFile = require(`./comandos/${command}.js`);
+        commandFile.run(client, message, args);
+    } catch (err) {
 
-    } catch (e) {
-        console.log(e.stack); 
-         message.reply(errado);
-    } 
-
-  
-const errado = new Discord.RichEmbed()
-.setTitle(`Erro!`, client.user.avatarURL)
-.setDescription(`🛑 | Comando inexistente ou utilizado de maneira incorreta!`)
-.setFooter(`${message.author.username}`, message.author.displayAvatarURL);
-
-});
+        if (err.code == "MODULE_NOT_FOUND") return;
+        console.error(err);
+    }
+    
+})
 
 client.on("ready", () => {
     console.log(`Bot foi iniciado, com ${client.users.size} usuários, em ${client.channels.size} canais, em ${client.guilds.size} servidores.`); 
