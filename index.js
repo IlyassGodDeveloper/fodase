@@ -40,15 +40,6 @@ client.on("message", (message) => {
     command = command.slice(prefix.length);
 
     let args = message.content.split(" ").slice(1);
-
-    try {
-        let commandFile = require(`./comandos/${command}.js`);
-        commandFile.run(client, message, args);
-    } catch (err) {
-
-        if (err.code == "MODULE_NOT_FOUND") return;
-        console.error(err);
-    }
    
     try {
 
