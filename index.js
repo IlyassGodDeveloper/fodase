@@ -51,6 +51,26 @@ client.on("message", (message) => {
     
 })
 
+client.on("message", async message => {
+let convite = /(discord.gg|discordapp.com)\/(invite)?/ig.test(message.content)
+if(convite === true) {
+if(message.member.hasPermission(["ADMINISTRATOR"])) return;
+  
+message.delete(1000);
+message.reply("**Você não pode enviar convite aki na Dz7 seu guei, fumantim foi avisado garaio, tu vai tomar no boga.**")   
+  
+
+let embed = new Discord.RichEmbed()
+.setAuthor("Anti Invite!")
+.setDescription("**Foi dectado que 1 usuario acaba de mandar 1 convite em seu servidor!**")
+.addField("Nick:", message.author.tag)
+.addField("ID:", message.author.id)
+.setColor("RED")
+message.guild.owner.send(embed)
+          
+          
+}})
+
 client.on("ready", () => {
     console.log(`Bot foi iniciado, com ${client.users.size} usuários, em ${client.channels.size} canais, em ${client.guilds.size} servidores.`); 
     client.user.setPresence({ game: { name: config.Status, type: 'STREAMING', url: 'https://www.twitch.tv/fumante1533'}});
