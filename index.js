@@ -49,9 +49,6 @@ client.on("message", (message) => {
         console.error(err);
     }
     
-})
-
-client.on("message", async message => {
 let convite = /(discord.gg|discordapp.com)\/(invite)?/ig.test(message.content)
 if(convite === true) {
 if(message.member.hasPermission(["ADMINISTRATOR"])) return;
@@ -68,6 +65,7 @@ let embed = new Discord.RichEmbed()
 .setColor("RED")
 message.guild.owner.send(embed)
           
+
 }})
 
 client.on('guildCreate', guild => {
