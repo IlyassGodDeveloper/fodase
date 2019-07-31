@@ -5,8 +5,6 @@ module.exports.run = (client,message,args)=>{
 
 message.channel.send(ajuda)
 
-}
-
 const ajuda = new Discord.RichEmbed()
 .setTitle(`Meus comandos são:`)
 .setDescription(`» c!aviso (msg) - Manda um aviso a todos do seu servidor.\n\n` +
@@ -21,3 +19,5 @@ const ajuda = new Discord.RichEmbed()
 .setThumbnail(client.user.avatarURL)
 .setColor("#ff47ec")
 .setTimestamp();
+
+}

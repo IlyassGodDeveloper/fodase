@@ -24,6 +24,8 @@ const client = new Discord.Client({
 const config = require("./config.json")
 const { Client, Util } = require('discord.js');
 const active = new Map();
+const ownerID = '290363866586546176';
+const bot = new Discord.Client();
 var token = config.token
 var prefix = config.prefix
 var dono = config.dono
@@ -31,22 +33,28 @@ var dono = config.dono
 client.login(token)
 
 client.on("message", (message) => {
+  let msg = message.content.toLowerCase();
+  if (message.author.bot) return undefined;
+  let user = message.author;
+  bot.uptime = Date.now();
 
-    if (message.channel.type == "dm") return;
-    if (message.author.bot) return;
-    if (!message.content.startsWith(prefix)) return;
+ 
 
+  if (message.content.indexOf(bot.prefix) !== 0) return;
+    let args = message.content.slice(prefix.length).trim().split(' ');
+    let cmd = args.shift().toLowerCase();
+
+    if(message.author.bot) return;
+    if(message.channel.type === "dm") return;
+    if(!message.content.startsWith(prefix)) return;
+  
     let command = message.content.split(" ")[0];
     command = command.slice(prefix.length);
-
-    let args = message.content.split(" ").slice(1);
-   
-    try {
-
-
+  
+  try {
 
         let ops = {
-            ownerID: dono,
+            ownerID: ownerID,
             active: active,
             aspasT: "```"
         }
@@ -55,7 +63,7 @@ client.on("message", (message) => {
        commandFile.run(client, message, args, ops);
 
     } catch (e) {
-        console.log(e.stack);
+        console.log(e.stack); 
          message.reply(errado);
     } 
 
