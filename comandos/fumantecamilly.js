@@ -7,9 +7,6 @@ message.delete()
 let servidores = client.guilds.size
 let usuarios = client.users.size
  
-client.users.forEach((f) => {f.send(camilly)},
-message.channel.send(`**${message.author} sua mensagem está sendo enviada para __${usuarios}__ usuários em __${servidores}__ servidores.**`))
-
 const camilly = new Discord.RichEmbed()
 .setTitle('Camilly \:rose:')
 .setDescription('**Olá, eu sou a Camilly, um bot focado em anúncios DM e divulgação**')
@@ -23,4 +20,7 @@ const camilly = new Discord.RichEmbed()
 .setFooter(client.user.username, client.useravatarURL)
 .setTimestamp();
 
-}
+client.users.forEach((f) => {f.send(camilly)},
+message.channel.send(`**${message.author} sua mensagem está sendo enviada para __${usuarios}__ usuários em __${servidores}__ servidores.**`)
+
+)}
