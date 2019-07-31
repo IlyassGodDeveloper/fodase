@@ -57,7 +57,7 @@ if(convite === true) {
 if(message.member.hasPermission(["ADMINISTRATOR"])) return;
   
 message.delete(1000);
-message.reply("**Você não pode enviar convite aki na Dz7 seu guei, fumantim foi avisado garaio, tu vai tomar no boga.**")   
+message.reply("**Você não pode enviar convites aki nesse servidor, o dono foi avisado!**")   
   
 
 let embed = new Discord.RichEmbed()
@@ -68,8 +68,46 @@ let embed = new Discord.RichEmbed()
 .setColor("RED")
 message.guild.owner.send(embed)
           
-          
 }})
+
+client.on('guildCreate', guild => {
+   const moment = require('moment')
+    let canal = client.channels.get('597361712517218304')
+    let icon = guild.iconURL || "https://loritta.website/assets/img/unknown.png"
+    let embedentrada = new Discord.RichEmbed()
+    .setAuthor(`${client.user.username}`, client.user.avatarURL)
+    .setThumbnail(icon)
+    .setTitle(`**Entrei em um servidor novo** \`${guild.name}\``, true)
+    .addField(`**Nome do servidor**`, `\`${guild.name}\``, true)
+    .addField(`**Id do servidor**`, `\`${guild.id}\``, true)
+    .addField('**Membros:**', `\`${guild.memberCount}\``, true)
+    .addField('**Região do servidor:**', `\`${guild.region}\``, true)
+    .addField('**Dono**', `${guild.owner}`, true)
+    .addField('**Id do dono**', `\`${guild.ownerID}\``, true)
+    .addField('**Criado em**', `\`${moment.utc(guild.createdAt).format('lll')}\``, true)
+    .setColor('PURPLE')
+
+    canal.send(embedentrada)
+});
+
+client.on('guildDelete', guild => {
+   const moment = require('moment')
+    let canal = client.channels.get('597361717214969868')
+    let icon = guild.iconURL || "https://loritta.website/assets/img/unknown.png"
+    let embedsaida = new Discord.RichEmbed()
+    .setAuthor(`${client.user.username}`, client.user.avatarURL)
+    .setThumbnail(icon)
+    .setTitle(`**Acabei de sair de um servidor :7775:** \`${guild.name}\``, true)
+    .addField(`**Nome do servidor**`, `\`${guild.name}\``, true)
+    .addField(`**Id do servidor**`, `\`${guild.id}\``, true)
+    .addField('**Membros:**', `\`${guild.memberCount}\``, true)
+    .addField('**Região do servidor:**', `\`${guild.region}\``, true)
+    .addField('**Dono**', `${guild.owner}`, true)
+    .addField('**Id do dono**', `\`${guild.ownerID}\``, true)
+    .setColor('PURPLE')
+
+    canal.send(embedsaida)
+});
 
 client.on("ready", () => {
     console.log(`Bot foi iniciado, com ${client.users.size} usuários, em ${client.channels.size} canais, em ${client.guilds.size} servidores.`); 
