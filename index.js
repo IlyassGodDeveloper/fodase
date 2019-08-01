@@ -109,6 +109,8 @@ client.on('guildDelete', guild => {
 
 client.on("ready", () => {
     console.log(`Bot foi iniciado, com ${client.users.size} usuários, em ${client.channels.size} canais, em ${client.guilds.size} servidores.`); 
+    client.user.setPresence({ game: { name: config.Status, type: 'STREAMING', url: 'https://www.twitch.tv/fumante1533'}});
+
 
 let status = [
   { name: `Sexo pra você`, type: 'STREAMING', url: 'https://www.twitch.tv/fumante1533'},
@@ -120,8 +122,21 @@ let status = [
 
 
 
-setInterval(function() {
-let randomStatus = status[Math.floor(Math.random() * status.length)];
-client.user.setPresence({ game: randomStatus });
-}, 7000)
+  function st() {
+            let rs = status[Math.floor(Math.random() * status.length)];
+            client.user.setPresence({ game: rs });
+        }
+        st();
+        setInterval(() => st(), 7000);  //10000 = 10Ms = 10 segundos
+    });
+
+
+
+fs.readdir("./eventos/", (err, files) => {
+    if (err) return console.error("[ERRO] " + err);
+    files.forEach(file => {
+        let eventFunction = require(`./eventos/${file}`);
+        let eventName = file.split(".")[0];
+        client.on(eventName, (...args) => eventFunction.run(client, ...args));
+    });
 })
