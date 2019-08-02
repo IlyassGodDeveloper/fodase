@@ -30,7 +30,7 @@ exports.run = async (bot, message, args) => {
     return message.reply("*\`Ocorreu um erro ao enviar a mensagem. Tente novamente.\`\*")
 
    }
-    message.channel.send(`**${message.author} Sua mensagem sendo enviada para` + membros + ` usuários**`)
+    message.channel.send(`**${message.author} Sua mensagem sendo enviada para ` + membros + ` usuários**`)
 }
 module.exports.help = {
 name: "avisoembed"
