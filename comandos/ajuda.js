@@ -9,7 +9,7 @@ const ajuda = new Discord.RichEmbed()
 `» \`c!avisoembed\` | titulo | descrição | link de foto ou gif |\n` +
 `Manda um aviso em embed a todos do seu servidor.\n` +
 `\`Exemplo:\` [Clique aqui](http://prntscr.com/o8pluq)\n` +
-`Obs: não tire os separadores |\n\n» c!larinha - Me divulga em seu servidor.\n\n` +
+`Obs: não tire os separadores |\n\n` +
 `» \`c!dz7\` - Divulga o meu servidor em seu servidor.\n\n` +
 `» \`c!cc\` - Cria um convite permanente do servidor.\n\n` +
 `» \`c!lock\` e c!unlock - Tranca e destranca o chat.\n\n` +
