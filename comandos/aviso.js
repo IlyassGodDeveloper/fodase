@@ -22,10 +22,11 @@ let mensagem = args.join(" ")
     })
 }catch(err){
 
-    return message.reply("*\`Ocorreu um erro ao enviar a mensagem. Tente novamente.\`\*")
+    return message.reply("**:chegay: *\`Ocorreu um erro ao enviar a mensagem. Tente novamente.\`\*").then(msg => msg.delete(8000))
 
    }
-    message.channel.send(`**${message.author} Sua mensagem sendo enviada para ` + membros + ` usuários**`)
+    message.channel.send("*\`Mensagem enviada para\`\* ***`" + membros + "`*** *\`membros\`\*").then(msg => msg.delete(8000))
+    message.channel.send("**`Mensagem a ser enviada:`\n**" + mensagem).then(msg => msg.delete(8000))
 }
 module.exports.help = {
 name: "aviso"

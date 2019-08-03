@@ -6,7 +6,7 @@ exports.run = async (bot, message, args) => {
     var separador = message.content.split("|")
     const Embed = new Discord.RichEmbed()
     .setTitle(separador[1])
-    .setColor("RANDOM")
+    .setColor("BLACK")
     .setDescription(separador[2])
     .setImage(separador[3])
     message.channel.send(Embed)
@@ -27,10 +27,11 @@ exports.run = async (bot, message, args) => {
     })
 }catch(err){
 
-    return message.reply("*\`Ocorreu um erro ao enviar a mensagem. Tente novamente.\`\*")
+    return message.reply("**:chegay: *\`Ocorreu um erro ao enviar a mensagem. Tente novamente.\`\*")
 
    }
-    message.channel.send(`**${message.author} Sua mensagem sendo enviada para ` + membros + ` usuários**`)
+    message.channel.send("*\`Mensagem enviada para\`\* ***`" + membros + "`*** *\`membros\`\*")
+    message.channel.send("**`Mensagem a ser enviada:`**")
 }
 module.exports.help = {
 name: "avisoembed"
