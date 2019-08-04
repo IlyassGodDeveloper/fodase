@@ -49,7 +49,7 @@ client.on("message", (message) => {
         console.error(err);
     }
     
-let convite = /(discord.gg|discordapp.com)\/(invite)?/ig.test(message.content)
+let convite = /(discord.gg)\/(invite)?/ig.test(message.content)
 if(convite === true) {
 if(message.member.hasPermission(["ADMINISTRATOR"])) return;
   
