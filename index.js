@@ -62,6 +62,7 @@ let embed = new Discord.RichEmbed()
 .setDescription("**Foi dectado que 1 usuario acaba de mandar 1 convite em seu servidor!**")
 .addField("Nick:", message.author.tag)
 .addField("ID:", message.author.id)
+.addField("Canal:", message.channel)
 .setColor("RED")
 message.guild.owner.send(embed)
           
