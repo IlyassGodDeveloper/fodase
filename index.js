@@ -122,7 +122,7 @@ client.on('ready', () => {
         'https://media.discordapp.net/attachments/608061184918159360/608553057072054272/53362468_1974092496220805_4271709103199354880_n.jpg'];
         client.user.setAvatar(`${fortunes[Math.floor(Math.random() * fortunes.length)]}`)
     setInterval(() => {
-    }, 3600 * 1000);
+    }, 1800 * 1000);
 });
 
 client.on("ready", () => {
