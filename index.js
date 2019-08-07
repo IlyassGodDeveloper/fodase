@@ -108,6 +108,23 @@ client.on('guildDelete', guild => {
     canal.send(embedsaida)
 });
 
+client.on('ready', () => {
+    var fortunes = [
+        'https://media.discordapp.net/attachments/608061184918159360/608553102785904651/67372199_190840298575991_681545014573795411_n.jpg',
+        'https://media.discordapp.net/attachments/608061184918159360/608553098075439135/67738425_2058598504436870_4810702304569196544_n.jpg',
+        'https://media.discordapp.net/attachments/608061184918159360/608553064361885696/61484462_149291769539298_6096400324850018404_n.jpg',
+        'https://media.discordapp.net/attachments/608061184918159360/608553069927464960/65915681_406769946612414_88716975001280251_n.jpg',
+        'https://media.discordapp.net/attachments/608061184918159360/608553066186276865/61486435_2021837124779675_388195748556046336_n.jpg',
+        'https://media.discordapp.net/attachments/608061184918159360/608553066647781397/65289057_2038815386415182_7450791501392510976_n.jpg',
+        'https://media.discordapp.net/attachments/608061184918159360/608553060125376532/54728493_1984706271826094_8665028337074176000_n.jpg',
+        'https://media.discordapp.net/attachments/608061184918159360/608553061836914698/56696919_1994546424175412_4116545141819310080_n.jpg',
+        'https://media.discordapp.net/attachments/608061184918159360/608553060364451840/53397896_1977734625856592_1871534709356363776_n.jpg',
+        'https://media.discordapp.net/attachments/608061184918159360/608553057072054272/53362468_1974092496220805_4271709103199354880_n.jpg'];
+        client.user.setAvatar(`${fortunes[Math.floor(Math.random() * fortunes.length)]}`)
+    setInterval(() => {
+    }, 3600 * 1000);
+});
+
 client.on("ready", () => {
     console.log(`Bot foi iniciado, com ${client.users.size} usuários, em ${client.channels.size} canais, em ${client.guilds.size} servidores.`); 
     client.user.setPresence({ game: { name: config.Status, type: 'STREAMING', url: 'https://www.twitch.tv/fumante1533'}});
