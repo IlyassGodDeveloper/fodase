@@ -32,7 +32,7 @@ const larinha = new Discord.RichEmbed()
 .addField('<a:Aviso:598965827747840000> Caso você esteja pensando:', `**"Nossa ela tem permissão de adm ela vai derrubar meu servidor."**\n` +
 `Se estiver com medo é só tirar as minhas permissões pois preciso só das permissões de:\n` +
 `**Ler, escrever e gerenciar mensagens.**`)
-.addField('<a:diamantemdp:603030561187037205> Use c!ajuda para saber mais.', `** **`)
+.addField('<a:diamantemdp:603030561187037205> Use a!ajuda para saber mais.', `** **`)
 .setColor('BLACK')
 .setFooter(client.user.username, client.useravatarURL)
 .setTimestamp();
