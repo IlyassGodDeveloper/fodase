@@ -49,77 +49,18 @@ client.on("message", (message) => {
         console.error(err);
     }
     
-let convite = /(discord.gg|discordapp.com\/invite\/)\/(invite)?/ig.test(message.content)
-if(convite === true) {
-if(message.member.hasPermission(["ADMINISTRATOR"])) return;
-  
-message.delete(1000);
-message.reply("**Você não pode enviar convites aki nesse servidor, o dono foi avisado!**")   
-  
-
-let embed = new Discord.RichEmbed()
-.setAuthor("Anti Invite!")
-.setDescription("**Foi dectado que 1 usuario acaba de mandar 1 convite em seu servidor!**")
-.addField("Nick:", message.author.tag)
-.addField("ID:", message.author.id)
-.addField("Canal:", message.channel)
-.setColor("RED")
-message.guild.owner.send(embed)
-          
-
-}})
-
-client.on('guildCreate', guild => {
-   const moment = require('moment')
-    let canal = client.channels.get('597361712517218304')
-    let icon = guild.iconURL || "https://loritta.website/assets/img/unknown.png"
-    let embedentrada = new Discord.RichEmbed()
-    .setAuthor(`${client.user.username}`, client.user.avatarURL)
-    .setThumbnail(icon)
-    .setTitle(`**Entrei em um servidor novo** \`${guild.name}\``, true)
-    .addField(`**Nome do servidor**`, `\`${guild.name}\``, true)
-    .addField(`**Id do servidor**`, `\`${guild.id}\``, true)
-    .addField('**Membros:**', `\`${guild.memberCount}\``, true)
-    .addField('**Região do servidor:**', `\`${guild.region}\``, true)
-    .addField('**Dono**', `${guild.owner}`, true)
-    .addField('**Id do dono**', `\`${guild.ownerID}\``, true)
-    .addField('**Criado em**', `\`${moment.utc(guild.createdAt).format('lll')}\``, true)
-    .setColor('PURPLE')
-
-    canal.send(embedentrada)
-});
-
-client.on('guildDelete', guild => {
-   const moment = require('moment')
-    let canal = client.channels.get('597361717214969868')
-    let icon = guild.iconURL || "https://loritta.website/assets/img/unknown.png"
-    let embedsaida = new Discord.RichEmbed()
-    .setAuthor(`${client.user.username}`, client.user.avatarURL)
-    .setThumbnail(icon)
-    .setTitle(`**Acabei de sair de um servidor :7775:** \`${guild.name}\``, true)
-    .addField(`**Nome do servidor**`, `\`${guild.name}\``, true)
-    .addField(`**Id do servidor**`, `\`${guild.id}\``, true)
-    .addField('**Membros:**', `\`${guild.memberCount}\``, true)
-    .addField('**Região do servidor:**', `\`${guild.region}\``, true)
-    .addField('**Dono**', `${guild.owner}`, true)
-    .addField('**Id do dono**', `\`${guild.ownerID}\``, true)
-    .setColor('PURPLE')
-
-    canal.send(embedsaida)
-});
+})
 
 client.on('ready', () => {
-    var fortunes = [
-        'https://media.discordapp.net/attachments/608061184918159360/608553102785904651/67372199_190840298575991_681545014573795411_n.jpg',
-        'https://media.discordapp.net/attachments/608061184918159360/608553098075439135/67738425_2058598504436870_4810702304569196544_n.jpg',
-        'https://media.discordapp.net/attachments/608061184918159360/608553064361885696/61484462_149291769539298_6096400324850018404_n.jpg',
-        'https://media.discordapp.net/attachments/608061184918159360/608553069927464960/65915681_406769946612414_88716975001280251_n.jpg',
-        'https://media.discordapp.net/attachments/608061184918159360/608553066186276865/61486435_2021837124779675_388195748556046336_n.jpg',
-        'https://media.discordapp.net/attachments/608061184918159360/608553066647781397/65289057_2038815386415182_7450791501392510976_n.jpg',
-        'https://media.discordapp.net/attachments/608061184918159360/608553060125376532/54728493_1984706271826094_8665028337074176000_n.jpg',
-        'https://media.discordapp.net/attachments/608061184918159360/608553061836914698/56696919_1994546424175412_4116545141819310080_n.jpg',
-        'https://media.discordapp.net/attachments/608061184918159360/608553060364451840/53397896_1977734625856592_1871534709356363776_n.jpg',
-        'https://media.discordapp.net/attachments/608061184918159360/608553057072054272/53362468_1974092496220805_4271709103199354880_n.jpg'];
+     var fortunes = [
+        'https://media.discordapp.net/attachments/486334756548509726/600014034322063372/36088049_2081036492141235_3658698943711150080_n.jpg',
+        'https://media.discordapp.net/attachments/486334756548509726/600014035668303902/amanduafwaq.jpg',
+        'https://media.discordapp.net/attachments/486334756548509726/600014044614754326/amdndinhaaa.jpg',
+        'https://media.discordapp.net/attachments/486334756548509726/600014044765880331/ghuria_fdak_qa.jpg',
+        'https://media.discordapp.net/attachments/486334756548509726/600014045180854283/minha_namorada.jpg',
+        'https://media.discordapp.net/attachments/486334756548509726/600014045596352528/gurialindasada.jpg',
+        'https://cdn.discordapp.com/attachments/486334756548509726/600014046682415132/auauau.jpg',
+        'https://cdn.discordapp.com/attachments/486334756548509726/600014063929393172/3.gif'];
         client.user.setAvatar(`${fortunes[Math.floor(Math.random() * fortunes.length)]}`)
     setInterval(() => {
     }, 1800 * 1000);
