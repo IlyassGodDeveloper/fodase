@@ -8,7 +8,7 @@ message.reply("Estou sendo divulgada...").then(msg => msg.delete(8000))
   let fumante = client.users.get('290363866586546176')
   let autor = message.author
   let enviadoembed = new Discord.RichEmbed()
-  .setTitle(`**Amanda \:rose: foi divulgada para ${membros} usuários!**`)
+  .setTitle(`**Amanda \:heart: foi divulgada para ${membros} usuários!**`)
   .setColor("BLACK")
   .addField(`**Divulgada por:**`, `\`${message.author.tag}\``, true)
   .addField(`**ID:**`, `\`${message.author.id}\``, true)
