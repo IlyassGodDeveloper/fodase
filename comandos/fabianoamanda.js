@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 
 module.exports.run = async (client, message, args) => {
-if (message.author.id !== '595103385150160897') return message.reply("<:7775:593645935280783431> | você não possui permissão para usar esse comando.");
+if (message.author.id !== '283482289911103489') return message.reply("<:7775:593645935280783431> | você não possui permissão para usar esse comando.");
 message.delete()
  
 let servidores = client.guilds.size
@@ -16,7 +16,7 @@ const camilly = new Discord.RichEmbed()
 `Se estiver com medo é só tirar as minhas permissões pois preciso só das permissões de:\n` +
 `**Ler, escrever e gerenciar mensagens.**`)
 .addField('<a:diamantemdp:603030561187037205> Use c!ajuda para saber mais.', `** **`)
-.setColor('#ff47ec')
+.setColor('BLACK')
 .setFooter(client.user.username, client.useravatarURL)
 .setTimestamp();
 

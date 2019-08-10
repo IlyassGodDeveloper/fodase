@@ -15,7 +15,7 @@ const ajuda = new Discord.RichEmbed()
 `» \`a!ping\` - Mostra o ping do bot.\n\n` +
 `» \`a!convite\` - Mostra o meu convite.`)
 .setThumbnail(client.user.avatarURL)
-.setColor("#ff47ec")
+.setColor("BLACK")
 .setFooter(message.author.tag, message.author.avatarURL)
 .setTimestamp();
 
