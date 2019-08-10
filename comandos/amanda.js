@@ -8,7 +8,7 @@ message.reply("Estou sendo divulgada...").then(msg => msg.delete(8000))
   let fumante = client.users.get('290363866586546176')
   let autor = message.author
   let enviadoembed = new Discord.RichEmbed()
-  .setTitle(`**Camilly \:rose: foi divulgada para ${membros} usuários!**`)
+  .setTitle(`**Amanda \:rose: foi divulgada para ${membros} usuários!**`)
   .setColor("#ff47ec")
   .addField(`**Divulgada por:**`, `\`${message.author.tag}\``, true)
   .addField(`**ID:**`, `\`${message.author.id}\``, true)
@@ -17,18 +17,18 @@ message.reply("Estou sendo divulgada...").then(msg => msg.delete(8000))
   
 
   let autorembed = new Discord.RichEmbed()
-  .setTitle('Camilly <a:gazosa6:593647982969225266>')
-  .setDescription(`<a:tetao1:593650200841814040> Olá, ${message.author} agradeço muito por me ajudar dando \`l!camilly\` **no servidor** \`${message.guild.name}\``)
+  .setTitle('Amanda <a:gazosa6:593647982969225266>')
+  .setDescription(`<a:tetao1:593650200841814040> Olá, ${message.author} agradeço muito por me ajudar dando \`a!amanda\` **no servidor** \`${message.guild.name}\``)
   .setImage("https://i2.wp.com/coliriodemacho.com.br/wordpress/wp-content/uploads/2015/07/gifs-seios-6.gif")
   .setThumbnail("https://cdn.discordapp.com/emojis/593650200841814040.gif")
   .setColor("#ff47ec")
   autor.send(autorembed)
 
 const larinha = new Discord.RichEmbed()
-.setTitle('Camilly \:rose:')
-.setDescription('**Olá, eu sou a Camilly, um bot focado em anúncios DM e divulgação**')
+.setTitle(client.user.username)
+.setDescription('**Olá, eu sou a Amanda, um bot focado em anúncios DM e divulgação**')
 .setThumbnail(client.user.avatarURL)
-.addField('<:7774:593646210187919380> Me adicione em seu servidor:', `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=594390665689956353&permissions=2146958847&scope=bot)**`)
+.addField('<:7774:593646210187919380> Me adicione em seu servidor:', `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=594944837816680452&permissions=2146958847&scope=bot)**`)
 .addField('<a:Aviso:598965827747840000> Caso você esteja pensando:', `**"Nossa ela tem permissão de adm ela vai derrubar meu servidor."**\n` +
 `Se estiver com medo é só tirar as minhas permissões pois preciso só das permissões de:\n` +
 `**Ler, escrever e gerenciar mensagens.**`)
