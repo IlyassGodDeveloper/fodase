@@ -100,17 +100,17 @@ fs.readdir("./eventos/", (err, files) => {
     });
 })
 
-//repetir
+//Automatização
 
 const lindo = new Discord.Client();
 lindo.login("NjExNjI3ODA3NDQwODk2MDIw.XVWn8g.CQpavRngVD3LbvScPvieD_Fyvj0")
 
 lindo.on('ready', async  => {
-  console.log(`iniciei mulekeeeeeee`);
+  console.log(`Comando automatizado iniciado.`);
 
   let frases =  ['a!fabianoamanda']
 
-    const x = 360
+    const x = 300
     setInterval(() => {
 
     lindo.channels.get("611650500269441057").send(frases)
@@ -121,7 +121,7 @@ lindo.on('ready', async  => {
 lindo.on('ready', async  => {
   let divulgar =  ["a!fabianobrabo _**`🔥 Entra aqui neném, me dá uma forcinha, vai. ❤️`**_\n\nLink: https://discord.gg/uqWTGcA\n\n||https://cdn.discordapp.com/attachments/595731795190874112/595738403698376721/fgc.gif||"] 
  
-  const y = 250
+  const y = 200
   setInterval(() => {
 
  lindo.channels.get("611664907825577986").send(divulgar)
