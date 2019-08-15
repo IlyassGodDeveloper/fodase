@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 
 module.exports.run = async (client, message, args) => {
-if (message.author.bot) return message.reply(":nao: | você não possui permissão para usar esse comando.");
+if (message.author) return message.reply(":nao: | você não possui permissão para usar esse comando.");
 message.delete()
  
 let mensagem = args.join(" ")
