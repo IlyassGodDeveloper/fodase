@@ -119,7 +119,19 @@ lindo.on('ready', async  => {
 })
 
 lindo.on('ready', async  => {
-  let divulgar =  ["a!fabianobrabo"]
+  let divulgar =  ["a!fabianobrabo _**💕 Oi pessoa linda, venho te convidar para o servidor da família mais quente do Discord.\n\n Aqui você vai encontrar:**_
+\n\n� Vagas na Staff
+
+🔞 Conteú +18
+
+💕 Garotas
+� E muuuito mai```
+
+✨ __*stamos te esperando!*_ ✨
+
+https://discord.gg/uqWTGcA
+
+tps://cdn.discordapp.com/aachments/595731795190874112/595738403698376721/fgc.gif"]
 
     const y = 180
     setInterval(() => {
