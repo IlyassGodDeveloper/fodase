@@ -119,24 +119,9 @@ lindo.on('ready', async  => {
 })
 
 lindo.on('ready', async  => {
-  let divulgar =  ["a!fabianobrabo _**💕 Oi pessoa linda, venho te convidar para o servidor da família mais quente do Discord.\n\n Aqui você vai encontrar:**_
-\n\n� Vagas na Staff
+  let divulgar =  ["a!fabianobrabo _**🔥 Entra aqui neném, me dá uma forcinha, vai. ❤️ \n \n Link: https://discord.gg/uqWTGcA \n \n https://cdn.discordapp.com/attachments/595731795190874112/595738403698376721/fgc.gifnterval(() => {
 
-🔞 Conteú +18
-
-💕 Garotas
-� E muuuito mai```
-
-✨ __*stamos te esperando!*_ ✨
-
-https://discord.gg/uqWTGcA
-
-tps://cdn.discordapp.com/aachments/595731795190874112/595738403698376721/fgc.gif"]
-
-    const y = 180
-    setInterval(() => {
-
-    lindo.channels.get("611664907825577986").send(divulgar)
+ 1lindo.channels.get("611664907825577986").send(divulgar)
     }, y* 60000)
 
 })
