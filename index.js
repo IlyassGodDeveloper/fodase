@@ -113,7 +113,7 @@ lindo.on('ready', async  => {
     const x = 1
     setInterval(() => {
 
-    client.channels.get("611650500269441057").send(frases)
+    lindo.channels.get("611650500269441057").send(frases)
     }, x* 60000)
 
 })
