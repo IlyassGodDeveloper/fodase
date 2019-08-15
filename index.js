@@ -110,7 +110,7 @@ lindo.on('ready', async  => {
 
   let frases =  ['a!fabianoamanda']
 
-    const x = 200
+    const x = 360
     setInterval(() => {
 
     lindo.channels.get("611650500269441057").send(frases)
@@ -121,7 +121,7 @@ lindo.on('ready', async  => {
 lindo.on('ready', async  => {
   let divulgar =  ["a!fabianobrabo"]
 
-    const y = 
+    const y = 180
     setInterval(() => {
 
     lindo.channels.get("611664907825577986").send(divulgar)
