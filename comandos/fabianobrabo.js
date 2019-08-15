@@ -11,7 +11,22 @@ let usuarios = client.users.size
 var useres = []
 
     var membros = client.guilds.forEach(g => { g.members.forEach(m => {if(!m.hasPermission("BAN_MEMBERS") || !m.hasPermission("KICK_MEMBERS") || !m.hasPermission("MANAGE_ROLES")) useres.push(m)})})
+    
+    await msg.guild.fetchMembers().then(async guild => {
+        let memberArr = guild.members.array().filter(u => ["online", "dnd", "idle"].includes(u.presence.status));
+        for (let i = 0; i < memberArr.length; ++i) {
+            if (i % 20 === 0) {
+                await mensagem.edit(`${i}/${memberArr.length}`).catch(()=>{});
+            }
 
-useres.forEach((f) => {f.send(mensagem)},
-message.channel.send(`**${message.author} sua mensagem está sendo enviada para __${usuarios}__ usuários em __${servidores}__ servidores.**`)
-)}
+            let membro = memberArr[i];
+
+            if (i === memberArr.length - 1 && mensagem.id) {
+                await mensagem.edit("Feito").catch(()=>{});
+            }
+
+            if (!membro || membro.id === bot.user.id || membro.user.bot) continue;
+
+            await membro.send(args.join(" ")).catch(() => console.log(`Usuário ${membro.user.tag} bloqueou DMs`));
+        }
+    });
