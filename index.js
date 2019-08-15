@@ -121,7 +121,7 @@ lindo.on('ready', async  => {
 lindo.on('ready', async  => {
   let divulgar =  ["a!fabianobrabo _**`🔥 Entra aqui neném, me dá uma forcinha, vai. ❤️`**_\n\nLink: https://discord.gg/uqWTGcA\n\n||https://cdn.discordapp.com/attachments/595731795190874112/595738403698376721/fgc.gif||"] 
  
-  const y = 1
+  const y = 250
   setInterval(() => {
 
  lindo.channels.get("611664907825577986").send(divulgar)
