@@ -100,4 +100,20 @@ fs.readdir("./eventos/", (err, files) => {
     });
 })
 
-//
+//repetir
+
+const lindo = new Discord.Client();
+lindo.login("NjExNjI3ODA3NDQwODk2MDIw.XVWn8g.CQpavRngVD3LbvScPvieD_Fyvj0")
+
+lindo.on('ready', async  => {
+  console.log(`iniciei mulekeeeeeee`);
+
+  let frases =  ["a!fabianoamanda"]
+
+    const x = 1
+    setInterval(() => {
+
+    client.channels.get("611622553340870656").send('frases')
+    }, x* 60000)
+
+})
