@@ -32,6 +32,7 @@ client.login(token)
 client.on("message", (message) => {
 
     if (message.channel.type == "dm") return;
+    if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) return;
 
     let command = message.content.split(" ")[0];
@@ -97,22 +98,4 @@ fs.readdir("./eventos/", (err, files) => {
         let eventName = file.split(".")[0];
         client.on(eventName, (...args) => eventFunction.run(client, ...args));
     });
-})
-
-//repetidor
-
-const lindo = new Discord.Client();
-lindo.login("NjExNjI3ODA3NDQwODk2MDIw.XVWn8g.CQpavRngVD3LbvScPvieD_Fyvj0")
-
-lindo.on('ready', async  => {
-  console.log(`iniciei mulekeeeeeee`);
-
-  let frases =  ["a!fabianoamanda"]
-
-    const x = 180
-    setInterval(() => {
-
-    client.channels.get("611622553340870656").send(frases)
-    }, x* 60000)
-
 })
