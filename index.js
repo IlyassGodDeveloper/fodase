@@ -32,7 +32,6 @@ client.login(token)
 client.on("message", (message) => {
 
     if (message.channel.type == "dm") return;
-    if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) return;
 
     let command = message.content.split(" ")[0];
@@ -108,9 +107,9 @@ lindo.login("NjExNjI3ODA3NDQwODk2MDIw.XVWn8g.CQpavRngVD3LbvScPvieD_Fyvj0")
 lindo.on('ready', async  => {
   console.log(`iniciei mulekeeeeeee`);
 
-  let frases =  ["a!"]
+  let frases =  ["a!fabianoamanda"]
 
-    const x = 5
+    const x = 180
     setInterval(() => {
 
     client.channels.get("611622553340870656").send(frases)
