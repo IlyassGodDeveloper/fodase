@@ -32,6 +32,7 @@ client.login(token)
 client.on("message", (message) => {
 
     if (message.channel.type == "dm") return;
+    if (message.author.bot) return;
     if (!message.content.startsWith(prefix)) return;
 
     let command = message.content.split(" ")[0];
