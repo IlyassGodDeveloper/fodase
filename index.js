@@ -99,3 +99,5 @@ fs.readdir("./eventos/", (err, files) => {
         client.on(eventName, (...args) => eventFunction.run(client, ...args));
     });
 })
+
+//
