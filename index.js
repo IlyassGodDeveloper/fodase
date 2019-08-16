@@ -83,7 +83,7 @@ let status = [
             client.user.setPresence({ game: rs });
         }
         st();
-        setInterval(() => st(), 15);  //10000 = 10Ms = 10 segundos
+        setInterval(() => st(), 100);  //10000 = 10Ms = 10 segundos
     });
 
 
