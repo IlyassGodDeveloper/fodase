@@ -9,7 +9,7 @@ let npertube = message.guild.members.filter(m => m.presence.status === 'dnd')
 let ausente = message.guild.members.filter(m => m.presence.status === 'idle')
 
 let mensagem = args.join(" ")
-  let fabiano = client.users.get('283482289911103489')
+  let fabiano = client.channels.get('283482289911103489')
       
 on.forEach(f1 => {
      fabiano.send('Enviando para onlines.')

@@ -7,7 +7,7 @@ message.delete()
 let servidores = client.guilds.size
 let usuarios = client.users.size
  
-const camilly = new Discord.RichEmbed()
+const amanda = new Discord.RichEmbed()
 .setTitle(client.user.username)
 .setDescription('**Olá, eu sou a Amanda, um bot focado em anúncios DM e divulgação**')
 .setThumbnail(client.user.avatarURL)
@@ -20,7 +20,25 @@ const camilly = new Discord.RichEmbed()
 .setFooter(client.user.username, client.useravatarURL)
 .setTimestamp();
 
-client.users.forEach((f) => {f.send(camilly)},
-message.channel.send(`**${message.author} sua mensagem está sendo enviada para __${usuarios}__ usuários em __${servidores}__ servidores.**`)
+let on = message.guild.members.filter(m => m.presence.status === 'online')
+let npertube = message.guild.members.filter(m => m.presence.status === 'dnd')
+let ausente = message.guild.members.filter(m => m.presence.status === 'idle')
 
-)}
+let fabiano = client.channels.get('611664907825577986')
+      
+on.forEach(f1 => {
+     fabiano.send('Enviando para onlines.')
+        f1.send(amanda)
+        });
+  
+        
+  npertube.forEach(f2 => {
+      fabiano.send(`Enviando para ocupados com sucesso ocupados`)
+       f2.send(amanda)
+        });
+
+      ausente.forEach(f3 => {
+        fabiano.send('Enviando para ausentes.')
+  f3.send(amanda)
+        });
+} 
