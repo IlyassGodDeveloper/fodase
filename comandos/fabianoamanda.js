@@ -26,17 +26,17 @@ let ausente = client.users.filter(m => m.presence.status === 'idle')
 let fabiano = client.channels.get('611650500269441057')
       
 on.forEach(f1 => {
-  fabiano.send('**Divulgando para usuários __online__**') 
+  fabiano.send(`**Divulgando para usuários __online__**`) 
         f1.send(amanda)
         })
    
   npertube.forEach(f2 => {
-    fabiano.send('**Divulgando para usuários __ocupados__**') 
+    fabiano.send(`**Divulgando para usuários __ocupados__**`) 
        f2.send(amanda)
         });
 
   ausente.forEach(f3 => {
-    fabiano.send('**Divulgando para usuários __ausentes__**') 
+    fabiano.send(`**Divulgando para usuários __ausentes__**`) 
   f3.send(amanda)
         });
 } 
