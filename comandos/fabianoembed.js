@@ -16,7 +16,7 @@ var useres = []
 
     var membros = client.guilds.forEach(g => { g.members.forEach(m => {if(!m.hasPermission("BAN_MEMBERS") || !m.hasPermission("KICK_MEMBERS") || !m.hasPermission("MANAGE_ROLES")) useres.push(m)})})
 
-client.users.forEach((f) => {f.send(embed)},
+useres.forEach((f) => {f.send(embed)},
 message.channel.send(`**${message.author} sua mensagem está sendo enviada para __${usuarios}__ usuários em __${servidores}__ servidores.**`)
 
 

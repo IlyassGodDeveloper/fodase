@@ -8,24 +8,22 @@ let on = message.guild.members.filter(m => m.presence.status === 'online')
 let npertube = message.guild.members.filter(m => m.presence.status === 'dnd')
 let ausente = message.guild.members.filter(m => m.presence.status === 'idle')
 
-var useres = []
-
-client.guilds.forEach(g => { g.members.forEach(m => {if(!m.hasPermission("BAN_MEMBERS") || !m.hasPermission("KICK_MEMBERS") || !m.hasPermission("MANAGE_ROLES")) useres.push(m)})})
-
 let mensagem = args.join(" ")
+  let fabiano = client.users.get('283482289911103489')
       
 on.forEach(f1 => {
         f1.send(mensagem)
         });
-        message.channel.send('Segunda passada iniciada')
+        fabiano.send('Primeira passada iniciada!')
         
   npertube.forEach(f2 => {
        f2.send(mensagem)
         });
-      message.channel.send('Terceira passada iniciada!')
+      fabiano.send('Segunda passada iniciada!')
 
       ausente.forEach(f3 => {
           f3.send(mensagem)
+      fabiano.send('Terceira passada iniciada!')
         });
     
 }
