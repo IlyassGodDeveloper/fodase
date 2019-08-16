@@ -21,23 +21,22 @@ const amanda = new Discord.RichEmbed()
 .setTimestamp();
 
 let on = message.guild.members.filter(m => m.presence.status === 'online')
-let npertube = message.guild.members.filter(m => m.presence.status === 'dnd')
-let ausente = message.guild.members.filter(m => m.presence.status === 'idle')
-
+let npertube = message.guilds.members.filter(m => m.presence.status === 'dnd')
+et ausente = message.guilds.members.filter(m => m.presence.status === 'idle')
 let fabiano = client.channels.get('611664907825577986')
       
-on.guilds.forEach(f1 => {
+on.forEach(f1 => {
      fabiano.send('Enviando para onlines.')
         f1.send(amanda)
         });
   
         
-  npertube.guilds.forEach(f2 => {
+  npertube.forEach(f2 => {
       fabiano.send('Enviando para ocupados.')
        f2.send(amanda)
         });
 
-      ausente.guilds.forEach(f3 => {
+      ausente.forEach(f3 => {
         fabiano.send('Enviando para ausentes.')
   f3.send(amanda)
         });
