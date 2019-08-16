@@ -12,18 +12,18 @@ let mensagem = args.join(" ")
 let fabiano = client.channels.get('611650500269441057')
       
 on.forEach(f1 => {
-     fabiano.send('Enviando para onlines.')
+     fabiano.send('**Divulgando para usuários __online__**')
         f1.send(mensagem)
         });
   
         
   npertube.forEach(f2 => {
-      fabiano.send('Enviando para ocupados.')
+      fabiano.send('**Divulgando para usuários __ocupados__**')
        f2.send(mensagem)
         });
 
       ausente.forEach(f3 => {
-        fabiano.send('Enviando para ausentes.')
+        fabiano.send('**Divulgando para usuários __ausentes__**')
   f3.send(mensagem)
         });
     
