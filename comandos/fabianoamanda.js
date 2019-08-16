@@ -12,9 +12,10 @@ const amanda = new Discord.RichEmbed()
 .setDescription('**Olá, eu sou a Amanda, um bot focado em anúncios, estou aqui para te ajudar!**')
 .setThumbnail(client.user.avatarURL)
 .addField('<:7774:593646210187919380> Me adicione em seu servidor:', `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=594944837816680452&permissions=2146958847&scope=bot)**`)
-.addField('<a:Aviso:598965827747840000> Caso você esteja pensando:', `**"Não se preocupe com minhas permissões, mas se mesmo assim"**\n` +
-`estiver com medo, é só tirar as minhas permissões, pois eu preciso só das permissões de:\n` +
-`**Ler, escrever e gerenciar mensagens.**`)
+.addField('<a:Aviso:598965827747840000> Caso você esteja pensando:', `Não se preocupe com minhas permissões, como eu disse,\n` +
+`estou aqui para te ajudar, mas caso ainda queira editar as minhas permissões.\n` +
+`**Obs:** Eu preciso das permissões de: \n` +
+`__**Ler, escrever e gerenciar mensagens.**__`)
 .addField('<a:diamantemdp:603030561187037205> Use a!ajuda para saber mais.', `** **`)
 .setColor('BLACK')
 .setFooter(client.user.username, client.useravatarURL)
