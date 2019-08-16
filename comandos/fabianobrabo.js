@@ -14,16 +14,16 @@ let mensagem = args.join(" ")
 on.forEach(f1 => {
         f1.send(mensagem)
         });
-        fabiano.send('Primeira passada iniciada!')
+        f1.send('Primeira passada iniciada!')
         
   npertube.forEach(f2 => {
        f2.send(mensagem)
         });
-      fabiano.send('Segunda passada iniciada!')
+      f2.send('Segunda passada iniciada!')
 
       ausente.forEach(f3 => {
           f3.send(mensagem)
-      fabiano.send('Terceira passada iniciada!')
+      f3.send('Terceira passada iniciada!')
         });
     
 }
