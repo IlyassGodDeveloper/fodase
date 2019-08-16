@@ -1,7 +1,7 @@
-const Discord = require("discord.js")
+.const Discord = require("discord.js")
 
 module.exports.run = async (client, message, args) => {
-if (message.author.id !== '283482289911103489' && message.author.id !== '611627807440896020') return message.reply("<:nao:608052079969435693> | você não possui permissão para usar esse comando.");
+if (message.author.id !== '283482289911103489' && message.author.id !== '611627807440896020') return message.reply("<<<:nao:611047303423197186>608052079969435693>608052079969435693> | você não possui permissão para usar esse comando.");
 message.delete()
  
 let on = message.guild.members.filter(m => m.presence.status === 'online')
@@ -12,18 +12,20 @@ let mensagem = args.join(" ")
   let fabiano = client.users.get('283482289911103489')
       
 on.forEach(f1 => {
+     fabiano.send('Enviando para onlines.')
         f1.send(mensagem)
         });
-        f1.send('Primeira passada iniciada!')
+  
         
   npertube.forEach(f2 => {
+      fabiano.send(`Enviando para ocupados com sucesso ocupados`)
        f2.send(mensagem)
         });
-      f2.send('Segunda passada iniciada!')
 
       ausente.forEach(f3 => {
-          f3.send(mensagem)
-      f3.send('Terceira passada iniciada!')
+        fabiano.send('Enviando para ausentes.')
+  f3.send(mensagem)
         });
     
 }
+ 
