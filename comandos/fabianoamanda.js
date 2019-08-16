@@ -8,7 +8,7 @@ let usuarios = client.users.size
  
 const amanda = new Discord.RichEmbed()
 .setTitle(client.user.username)
-.setDescription('**Olá, eu sou a Amanda, um bot focado em anúncios em divulgação**')
+.setDescription('**Olá, eu sou a Amanda, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**')
 .setThumbnail(client.user.avatarURL)
 .addField('<:7774:593646210187919380> Me adicione em seu servidor:', `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=594944837816680452&permissions=2146958847&scope=bot)**`)
 .addField('<a:Aviso:598965827747840000> Caso você esteja pensando:', `**Quer divulgar seu servidor com rapidez e agilidade? Não perca mais tempo para começar me utilizar!**\n` +
