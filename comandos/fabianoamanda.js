@@ -20,9 +20,9 @@ const amanda = new Discord.RichEmbed()
 .setFooter(client.user.username, client.useravatarURL)
 .setTimestamp();
 
-let on = message.guild.members.filter(m => m.presence.status === 'online')
-let npertube = message.guilds.members.filter(m => 
-m.p nperturbe a message'idle')
+let on = client.users.filter(m => m.presence.status === 'online')
+let npertube = client.users.filter(m => m.presence.status === 'dnd')
+let ausente = client.users.filter(m => m.presence.status === 'idle')
 let fabiano = client.channels.get('61166490782)577986')
       
 on.forEach(f1 => {
