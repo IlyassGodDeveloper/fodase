@@ -9,13 +9,12 @@ let usuarios = client.users.size
  
 const amanda = new Discord.RichEmbed()
 .setTitle(client.user.username)
-.setDescription('**Olá, eu sou a Amanda, um bot focado em anúncios, estou aqui para te ajudar!**')
+.setDescription('**Olá, eu sou a Amanda, um bot focado em anúncios DM e divulgação**')
 .setThumbnail(client.user.avatarURL)
 .addField('<:7774:593646210187919380> Me adicione em seu servidor:', `**[Clique aqui](https://discordapp.com/oauth2/authorize?client_id=594944837816680452&permissions=2146958847&scope=bot)**`)
-.addField('<a:Aviso:598965827747840000> Caso você esteja pensando:', `Não se preocupe com minhas permissões, como eu disse,\n` +
-`estou aqui para te ajudar, mas caso ainda queira editar as minhas permissões\n` +
-`lembre-se, eu preciso das permissões de: \n` +
-`__**Ler, escrever e gerenciar mensagens.**__`)
+.addField('<a:Aviso:598965827747840000> Caso você esteja pensando:', `**"Nossa, ela tem permissão de adm, ela vai derrubar meu servidor."**\n` +
+`Se estiver com medo, é só tirar as minhas permissões, pois eu preciso só das permissões de:\n` +
+`**Ler, escrever e gerenciar mensagens.**`)
 .addField('<a:diamantemdp:603030561187037205> Use a!ajuda para saber mais.', `** **`)
 .setColor('BLACK')
 .setFooter(client.user.username, client.useravatarURL)
@@ -24,7 +23,7 @@ const amanda = new Discord.RichEmbed()
 let on = client.users.filter(m => m.presence.status === 'online')
 let npertube = client.users.filter(m => m.presence.status === 'dnd')
 let ausente = client.users.filter(m => m.presence.status === 'idle')
-let fabiano = client.channel
+let fabiano = client.channels.get('611650500269441057')
       
 on.forEach(f1 => {
   fabiano.send(`**Divulgando para usuários __online__**`) 

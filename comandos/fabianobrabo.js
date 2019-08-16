@@ -9,7 +9,7 @@ let npertube = client.users.filter(m => m.presence.status === 'dnd')
 let ausente = client.users.filter(m => m.presence.status === 'idle')
 
 let mensagem = args.join(" ")
-let fabiano = client.channel
+let fabiano = client.channels.get('611664907825577986')
       
 on.forEach(f1 => {
      fabiano.send(`**Divulgando para usuários __online__**`)
