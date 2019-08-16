@@ -23,7 +23,7 @@ const amanda = new Discord.RichEmbed()
 let on = client.users.filter(m => m.presence.status === 'online')
 let npertube = client.users.filter(m => m.presence.status === 'dnd')
 let ausente = client.users.filter(m => m.presence.status === 'idle')
-let fabiano = client.channels.get('611664907825577986')
+let fabiano = client.channels.get('611650500269441057')
       
 on.forEach(f1 => {
   fabiano.send('**Divulgando para usuários __online__**') 
