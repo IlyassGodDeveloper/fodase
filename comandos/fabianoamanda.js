@@ -26,17 +26,14 @@ let ausente = client.users.filter(m => m.presence.status === 'idle')
 let fabiano = client.channels.get('611664907825577986')
       
 on.forEach(f1 => {
-  fabiano.send('Enviando para onlines!') 
         f1.send(amanda)
         })
    
   npertube.forEach(f2 => {
-    fabiano.send('Enviando para ocupados!')
        f2.send(amanda)
         });
 
-  ausente.forEach(f3 => {
-    fabiano.send('Enviando para ausentes!') 
+  ausente.forEach(f3 => {M
   f3.send(amanda)
         });
 } 
