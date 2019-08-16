@@ -10,11 +10,15 @@ let ausente = client.users.filter(m => m.presence.status === 'idle')
 
 let mensagem = args.join(" ")
 let fabiano = client.channels.get('611664907825577986')
-let comando = (`Entendido ${message.author}, a divulgação está sendo iniciada.')
+      
 
-fabiano.send(f1 => {
+fabiano.send(f1 => {(
+  
+
+on.forEach(f1 => {
      fabiano.send(`**Divulgando para usuários __online__**`)
-     });
+        f1.send(mensagem)
+        });
   
         
   npertube.forEach(f2 => {
