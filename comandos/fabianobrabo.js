@@ -23,7 +23,7 @@ on.forEach(f1 => {
         });
 
       ausente.forEach(f3 => {
-        fabiano.send(`**Divulgando para usuários __ausentes__**')
+        fabiano.send(`**Divulgando para usuários __ausentes__**`)
   f3.send(mensagem)
         });
     
