@@ -18,7 +18,7 @@ on.forEach(f1 => {
   
         
   npertube.forEach(f2 => {
-      fabiano.send(`Enviando para ocupados com sucesso ocupados`)
+      fabiano.send('Enviando para ocupados com sucesso ocupados`)
        f2.send(mensagem)
         });
 
