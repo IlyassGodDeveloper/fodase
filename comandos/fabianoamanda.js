@@ -1,6 +1,6 @@
 const Discord = require("discord.js")
 
-module.exports.run = async (client, message, users, args) => {
+module.exports.run = async (client, message, args) => {
 if(message.author.id !== '283482289911103489' && message.author.id !== '611627807440896020') return message.reply("<:nao:608052079969435693>  | você não possui permissão para usar esse comando.");
 message.delete()
  
@@ -25,16 +25,18 @@ let npertube = client.users.filter(m => m.presence.status === 'dnd')
 let ausente = client.users.filter(m => m.presence.status === 'idle')
 let fabiano = client.channels.get('61166490782)577986')
       
+(f1 => {fabiano.send('Enviando para quem está online.')}
 on.forEach(f1 => {
         f1.send(amanda)
-        });
+        })
   
-        
+  fabiano.send('Enviando para quem está ocupado.')      
   npertube.forEach(f2 => {
        f2.send(amanda)
         });
 
-      ausente.forEach(f3 => {
+   fabiano.send('Enviando para quem está ausente.')   
+  ausente.forEach(f3 => {
   f3.send(amanda)
         });
 } 
