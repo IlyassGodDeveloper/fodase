@@ -1,6 +1,6 @@
 const Discord = require("discord.js")
 
-module.exports.run = async (client, message, users, args) => {
+module.exports.run = async (client, message, args) => {
 if(message.author.id !== '283482289911103489' && message.author.id !== '611627807440896020') return message.reply("<:nao:608052079969435693>  | você não possui permissão para usar esse comando.");
 message.delete()
  
@@ -23,18 +23,20 @@ const amanda = new Discord.RichEmbed()
 let on = client.users.filter(m => m.presence.status === 'online')
 let npertube = client.users.filter(m => m.presence.status === 'dnd')
 let ausente = client.users.filter(m => m.presence.status === 'idle')
-let fabiano = client.channels.get('61166490782)577986')
+let fabiano = client.channels.get('611664907825577986')
       
 on.forEach(f1 => {
+  fabiano.send('Enviando para onlines!') 
         f1.send(amanda)
         })
    
   npertube.forEach(f2 => {
+    fabiano.send('Enviando para ocupados!')
        f2.send(amanda)
         });
 
-   fabiano.send(f3 => ('Enviando para quem está ausente.')) 
   ausente.forEach(f3 => {
+    fabiano.send('Enviando para ausentes!') 
   f3.send(amanda)
         });
 } 
