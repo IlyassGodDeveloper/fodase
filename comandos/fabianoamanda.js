@@ -22,7 +22,7 @@ const amanda = new Discord.RichEmbed()
 
 let on = message.guild.members.filter(m => m.presence.status === 'online')
 let npertube = message.guilds.members.filter(m => 
-m.p nperturbetatus === 'idle')
+m.p nperturbe a message'idle')
 let fabiano = client.channels.get('61166490782)577986')
       
 on.forEach(f1 => {
