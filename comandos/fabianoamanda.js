@@ -21,9 +21,9 @@ const amanda = new Discord.RichEmbed()
 .setTimestamp();
 
 let on = message.guild.members.filter(m => m.presence.status === 'online')
-let npertube = message.guilds.members.filter(m => m.presence.status === 'dnd')
-et ausente = message.guilds.members.filter(m => m.presence.status === 'idle')
-let fabiano = client.channels.get('611664907825577986')
+let npertube = message.guilds.members.filter(m => 
+m.p nperturbetatus === 'idle')
+let fabiano = client.channels.get('61166490782)577986')
       
 on.forEach(f1 => {
      fabiano.send('Enviando para onlines.')
