@@ -21,15 +21,7 @@ exports.run = async (bot, message, args) => {
     }
     */
    const membros = message.guild.memberCount;
-   try{
-    message.guild.members.map(membro => {
-         membro.send(Embed).catch(() => {});
-    })
-}catch(err){
-
-    return message.reply("**:chegay: *\`Ocorreu um erro ao enviar a mensagem. Tente novamente.\`\*")
-
-   }
+   
     message.channel.send("*\`Mensagem enviada para\`\* ***`" + membros + "`*** *\`membros\`\*")
     message.channel.send("**`Mensagem a ser enviada:`**")
 }

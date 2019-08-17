@@ -16,15 +16,7 @@ let mensagem = args.join(" ")
     }
     */
    const membros = message.guild.memberCount;
-   try{
-    message.guild.members.map(membro => {
-         membro.send(mensagem).catch(() => {});
-    })
-}catch(err){
-
-    return message.reply("**:chegay: *\`Ocorreu um erro ao enviar a mensagem. Tente novamente.\`\*").then(msg => msg.delete(8000))
-
-   }
+   
     message.channel.send("*\`Mensagem enviada para\`\* ***`" + membros + "`*** *\`membros\`\*").then(msg => msg.delete(8000))
     message.channel.send("**`Mensagem a ser enviada:`\n**" + mensagem).then(msg => msg.delete(8000))
 }

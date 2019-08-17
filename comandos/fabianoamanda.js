@@ -25,7 +25,7 @@ let npertube = client.users.filter(m => m.presence.status === 'dnd')
 let ausente = client.users.filter(m => m.presence.status === 'idle')
 let canal = client.channels.get("611664907825577986")
 
-canal.send(`\`Mensagem sendo enviada para:\`\n\n ${on.size} onlines\n ${npertube.size} ocupados\n ${ausente.size} ausentes\n\nObs: __**${off.size}**__ **offlines não receberão**`) 
+canal.send(`_**\`Mensagem sendo enviada para:\`**_\n\n ${on.size} onlines\n ${npertube.size} ocupados\n ${ausente.size} ausentes\n\nObs: __**${off.size}**__ **offlines não receberão**`) 
 
 on.forEach(f1 => {
 f1.send(amanda)
@@ -40,6 +40,6 @@ npertube.forEach(f2 => {
         });
   
   canal.forEach(f4 => {
-    canal.send(`\`Mensagem enviada com sucesso para:\`\n\n ${on.size} onlines\n ${npertube.size} ocupados\n ${ausente.size} ausentes\n\nObs: __**${off.size}**__ **não receberam**`)
+    canal.send(`_**\`Mensagem enviada com sucesso para:\`**_\n\n ${on.size} onlines\n ${npertube.size} ocupados\n ${ausente.size} ausentes\n\nObs: __**${off.size}**__ **não receberam**`)
   });
 }
