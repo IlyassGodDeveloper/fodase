@@ -20,6 +20,8 @@ const amanda = new Discord.RichEmbed()
 .setTimestamp();
 
 let on = client.users.filter(m => m.presence.status === 'online')
+let todos = client.users.filter(m => m.presence.status === 'idle' && m.presence.status === 'dnd' && m.presence.status === 'online')
+let off = client.users.filters(m => m.presence.status === 'offline')
 let npertube = client.users.filter(m => m.presence.status === 'dnd')
 let ausente = client.users.filter(m => m.presence.status === 'idle')
 let fabiano = client.channels.get('611650500269441057')
