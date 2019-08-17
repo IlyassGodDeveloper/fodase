@@ -26,7 +26,13 @@ let npertube = client.users.filter(m => m.presence.status === 'dnd')
 let ausente = client.users.filter(m => m.presence.status === 'idle')
 let fabiano = client.users.get('283482289911103489')
 
-fabiano.send(`Mensagem sendo enviada para:\n ${on.size} onlines\n ${npertube.size} ocupados\n ${oabiano{ausente.size} ausentes\n\n\`Obs: ${off.size} offlines não receforEach(f2 => {
+fabiano.send(`Mensagem sendo enviada para:\n ${on.size} onlines\n ${npertube.size} ocupados\n ${ausente.size} ausentes\n\n\`Obs: __${off.size}__ offlines não receberão\``) 
+
+on.forEach(f1 => {
+f1.send(amanda)
+        })
+
+npertube.forEach(f2 => {
        f2.send(amanda)
         });
 
@@ -35,6 +41,6 @@ fabiano.send(`Mensagem sendo enviada para:\n ${on.size} onlines\n ${npertube.siz
         });
   
   fabiano.forEach(f4 => {
-    fabiano.send(`Mensagem enviada com sucesso para:\n\n ${on.size} onlines\n ${npertube.size} ocupados\n ${ausente.size} ausentes\n\n\`Obs: _fabianof.size}__ offlines nãfabianoeberam\``)
+    fabiano.send(`Mensagem enviada com sucesso para:\n\n ${on.size} onlines\n ${npertube.size} ocupados\n ${ausente.size} ausentes\n\n\`Obs: __${off.size}__ não receberam\``)
   });
-} _${off. size} naoão receberam__
+}
