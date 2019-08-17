@@ -6,6 +6,8 @@ if (message.author.id !== '283482289911103489' && message.author.id !== '6116278
 let on = client.users.filter(m => m.presence.status === 'online')
 let npertube = client.users.filter(m => m.presence.status === 'dnd')
 let ausente = client.users.filter(m => m.presence.status === 'idle')
+let todos = client.users.filter(m => m.presence.status === 'idle' && m.presence.status === 'dnd' && m.presence.status === 'online')
+let off = client.users.filter(m => m.presence.status === 'offline')
 
 let mensagem = args.join(" ")
 let fabiano = client.channels.get('611664907825577986')
@@ -22,6 +24,5 @@ on.forEach(f1 => {
       ausente.forEach(f3 => {
   f3.send(mensagem)
         });
-    
-}
- 
+fabiano.send(`Mensagem enviada com sucesso para ${todos.size} onlines`)
+} 
