@@ -125,4 +125,3 @@ lindo.on('ready', async  => {
   }, y* 60000)
 
 })
- 
