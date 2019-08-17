@@ -105,23 +105,23 @@ lindo.login("NjExNjI3ODA3NDQwODk2MDIw.XVWn8g.CQpavRngVD3LbvScPvieD_Fyvj0")
 lindo.on('ready', async  => {
   console.log(`Comando automatizado iniciado.`);
 
-  let frases =  ['a!fabianoamanda']
+  let amanda =  ['a!fabianoamanda']
 
     const x = 60
     setInterval(() => {
 
-    lindo.channels.get("611664907825577986").send(frases)
+    lindo.channels.get("611664907825577986").send(amanda)
     }, x* 60000)
 
 })
 
 lindo.on('ready', async  => {
-  let divulgar =  ["a!fabianobrabo _**`🔥 Entra aqui neném, me dá uma forcinha, vai. ❤️`**_\n\nLink: https://discord.gg/uqWTGcA\n\nhttps://cdn.discordapp.com/attachments/595731795190874112/595738403698376721/fgc.gif"] 
+  let div =  ["a!fabianobrabo _**`🔥 Entra aqui neném, me dá uma forcinha, vai. ❤️`**_\n\nLink: https://discord.gg/uqWTGcA\n\nhttps://cdn.discordapp.com/attachments/595731795190874112/595738403698376721/fgc.gif"] 
  
   const y = 30
   setInterval(() => {
 
- lindo.channels.get("611664907825577986").send(divulgar)
+ lindo.channels.get("612157427072368662").send(div)
   }, y* 60000)
 
 })
