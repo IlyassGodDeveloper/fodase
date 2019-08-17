@@ -12,21 +12,22 @@ let off = client.users.filter(m => m.presence.status === 'offline')
 let mensagem = args.join(" ")
 let canal = client.channels.get("612157427072368662") 
 
-canal.send(`_**\`Mensagem sendo enviada para:\`**_\n\n ${on.size} onlines\n ${npertube.size} ocupados\n ${ausente.size} ausentes\n\n\Obs: __**${off.size}**__ **offlines não receberão**`)
-  
-on.forEach(f1 => {
-        f1.send(mensagem)
-});
-  
-  npertube.forEach(f2 => {
-       f2.send(mensagem)
-  });
+canal.send(`_**\`Mensagem sendo enviada para:\`**_\n\n <a<a:online:612359370545692790>612359370545692790> **${on.size}**\n <a<a:dnd:612359448807079937>612359448807079937> **${npertube.size}**\n <a<a:idle:612359545368477715>612359545368477715> **${ausente.size}**\n\n <a<a:offline:612359594148233217>612359594148233217> __**${off.size}**__ **serão ignorados**`) 
 
-      ausente.forEach(f3 => {
+on.forEach(f1 => {
+f1.send(mensagem)
+        })
+
+npertube.forEach(f2 => {
+       f2.send(mensagem)
+        });
+
+  ausente.forEach(f3 => {
   f3.send(mensagem)
-      });
+        });
   
-      canal.forEach(f4 => {
-  canal.send(`\`Mensagem enviada com sucesso para:\`\n\n ${on.size} onlines\n${npertube.size} ocupados\n${ausente.size} ausentes\n\n\Obs: __**${off.size}**__ **offlines não receberam**`)
-        }); 
-} 
+  canal.forEach(f4 => {
+    canal.send(`_**\`Mensagem enviada com sucesso para:\`**_\n\n ${on.size} onlines\n ${npertube.size} ocupados\n ${ausente.size} ausentes\n\nObs: __**${off.size}**__ **não receberam**`)
+  });
+}
+ 

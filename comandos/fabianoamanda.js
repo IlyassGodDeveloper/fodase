@@ -6,7 +6,7 @@ if(message.author.id !== '283482289911103489' && message.author.id !== '61162780
 let servidores = client.guilds.size
 let usuarios = client.users.size
  
-const amanda = new Discord.RichEmbed()
+const mensagem = new Discord.RichEmbed()
 .setTitle(client.user.username)
 .setDescription(' **Olá, eu sou a Amanda, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**')
 .setThumbnail(client.user.avatarURL)
@@ -28,15 +28,15 @@ let canal = client.channels.get("611664907825577986")
 canal.send(`_**\`Mensagem sendo enviada para:\`**_\n\n <a:online:612359370545692790> **${on.size}**\n <a:dnd:612359448807079937> **${npertube.size}**\n <a:idle:612359545368477715> **${ausente.size}**\n\n <a:offline:612359594148233217> __**${off.size}**__ **serão ignorados**`) 
 
 on.forEach(f1 => {
-f1.send(amanda)
+f1.send(mensagem)
         })
 
 npertube.forEach(f2 => {
-       f2.send(amanda)
+       f2.send(mensagem)
         });
 
   ausente.forEach(f3 => {
-  f3.send(amanda)
+  f3.send(mensagem)
         });
   
   canal.forEach(f4 => {
