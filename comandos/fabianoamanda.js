@@ -25,7 +25,9 @@ let off = client.users.filters(m => m.presence.status === 'offline')
 let npertube = client.users.filter(m => m.presence.status === 'dnd')
 let ausente = client.users.filter(m => m.presence.status === 'idle')
 let fabiano = client.channels.get('611650500269441057')
-      
+
+fabiano.send(`Mensagem sendo enviada para:\n\n ${on.size} onlines\n ${npertube.size} ocupados\n ${ausentes.size} ausentes\n\n`Obs: ${off.size}
+
 on.forEach(f1 => {
         f1.send(amanda)
         })
