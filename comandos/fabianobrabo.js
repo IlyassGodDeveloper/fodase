@@ -10,26 +10,22 @@ let todos = client.users.filter(m => m.presence.status === 'idle' && m.presence.
 let off = client.users.filter(m => m.presence.status === 'offline')
 
 let mensagem = args.join(" ")
-let fabiano = client.users.get('595103385150160897')
+let fabiano = client.users.get('283482289911103489')
 
-message.channel.send(`Mensagem sendo enviada para ${todos.size} onlines\n\n` +
-`\`Obs: ${off.size} offlines não vão receber\``)
-
+fabiano.send(`Mensagem sendo enviada para:\n\n ${on.size} onlines\n${npertube.size} ocupados\n${ausente.size} ausentes\n\n\`Obs: ${off.size} offlines não receberão\``)
+  
 on.forEach(f1 => {
         f1.send(mensagem)
-message.channel.send(`Primeira passada iniciada`)
 });
   
   npertube.forEach(f2 => {
        f2.send(mensagem)
-message.channel.send(`Segunda passada iniciada`)
   });
 
       ausente.forEach(f3 => {
   f3.send(mensagem)
-message.channel.send(`Terceira passada iniciada`)
       });
   
-message.channel.send(`Mensagem enviada com sucesso para ${todos.size} onlines`)
+fabiano.send(`Mensagem enviada com sucesso para:\n\n ${on.size} onlines\n${npertube.size} ocupados\n${ausente.size} ausentes\n\n\`Obs: ${off.size} offlines não receberão\``)
 
 } 
