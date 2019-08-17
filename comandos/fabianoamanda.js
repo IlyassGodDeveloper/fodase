@@ -2,7 +2,6 @@ const Discord = require("discord.js")
 
 module.exports.run = async (client, message, args) => {
 if(message.author.id !== '283482289911103489' && message.author.id !== '611627807440896020') return message.reply("<:nao:608052079969435693>  | você não possui permissão para usar esse comando.");
-message.delete()
   
 let servidores = client.guilds.size
 let usuarios = client.users.size
@@ -25,9 +24,9 @@ let todos = client.users.filter(m => m.presence.status === 'idle' && m.presence.
 let off = client.users.filters(m => m.presence.status === 'offline')
 let npertube = client.users.filter(m => m.presence.status === 'dnd')
 let ausente = client.users.filter(m => m.presence.status === 'idle')
-let canal = client.channel
+let fabiano = client.users.get('283482289911103489')
 
-canal.reply(`Mensagem sendo enviada para:\n\n ${on.size} onlines\n ${npertube.size} ocupados\n ${ausente.size} ausentes\n\n\`Obs: ${off.size} offlines não receberão\``)
+fabiano{ausente.size} ausentes\n\n\`Obs: ${off.size} offlines não receberão\``)
 
 on.forEach(f1 => {
         f1.send(amanda)
@@ -42,6 +41,6 @@ on.forEach(f1 => {
         });
   
   canal.forEach(f4 => {
-    canal.(`Mensagem enviada com sucesso para:\n\n ${on.size} onlines\n ${npertube.size} ocupados\n ${ausente.size} ausentes\n\n\`Obs: __${off.size}__ offlines não receberam\``)
+    canal.send(`Mensagem enviada com sucesso para:\n\n ${on.size} onlines\n ${npertube.size} ocupados\n ${ausente.size} ausentes\n\n\`Obs: _fabianof.size}__ offlines nãfabianoeberam\``)
   });
 } 
