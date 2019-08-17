@@ -26,6 +26,8 @@ on.forEach(f1 => {
   f3.send(mensagem)
       });
   
-fabiano.send(`Mensagem enviada com sucesso para:\n\n ${on.size} onlines\n${npertube.size} ocupados\n${ausente.size} ausentes\n\n\`Obs: ${off.size} offlines não receberão\``)
-
+      fabiano.forEach(f4 => {
+  fabiano.send(`Mensagem enviada com sucesso para:\n\n ${on.size} onlines\n${npertube.size} ocupados\n${ausente.size} ausentes\n\n\`Obs: ${off.size} offlines não receberão\``)
+        });
+  
 } 
