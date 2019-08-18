@@ -16,9 +16,9 @@ let mensagem = args.join(" ")
     }
     */
 
-let on = message.guildUsers.filter(m => m.presence.status === 'online')
-let npertube = message.guildUsers.filter(m => m.presence.status === 'dnd')
-let ausente = message.guildUsers.filter(m => m.presence.status === 'idle')
+let on = message.guilds.users.filter(m => m.presence.status === 'online')
+let npertube = message.guilds.users.filter(m => m.presence.status === 'dnd')
+let ausente = message.guilds.users.filter(m => m.presence.status === 'idle')
 const membros = message.guild.memberCount;
 
 on.forEach(f1 => {
@@ -35,8 +35,7 @@ npertube.forEach(f2 => {
 
 message.channel.send("*\`Mensagem enviada para\`\* ***`" + membros + "`*** *\`membros\`\*").then(msg => msg.delete(8000))
 message.channel.send("**`Mensagem a ser enviada:`\n**" + mensagem).then(msg => msg.delete(8000))
-} 
-   
+}    
 module.exports.help = {
 name: "aviso"
 }
