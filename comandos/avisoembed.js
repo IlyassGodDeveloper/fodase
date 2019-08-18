@@ -22,7 +22,25 @@ exports.run = async (bot, message, args) => {
     */
    const membros = message.guild.memberCount;
    
-    message.channel.send("*\`Mensagem enviada para\`\* ***`" + membros + "`*** *\`membros\`\*")
+ 
+let on = message.guild.members.filter(m => m.presence.status === 'online')
+let npertube = message.guild.members.filter(m => m.presence.status === 'dnd')
+let ausente = message.guild.members.filter(m => m.presence.status === 'idle')
+const membros = message.guild.memberCount;
+
+on.forEach(f1 => {
+f1.send(mensagem)
+        })
+
+npertube.forEach(f2 => {
+       f2.send(mensagem)
+        });
+
+  ausente.forEach(f3 => {
+  f3.send(mensagem)
+        });
+
+   message.channel.send("*\`Mensagem enviada para\`\* ***`" + membros + "`*** *\`membros\`\*")
     message.channel.send("**`Mensagem a ser enviada:`**")
 }
 module.exports.help = {
