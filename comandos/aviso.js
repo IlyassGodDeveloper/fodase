@@ -23,7 +23,7 @@ const membros = message.guild.memberCount;
 
 message.channel.send("*\`Mensagem enviada para\`\* ***`" + membros + "`*** *\`membros\`\*").then(msg => msg.delete(8000))
 message.channel.send("**`Mensagem a ser enviada:`\n**" + mensagem).then(msg => msg.delete(8000))
-
+} 
 
 on.forEach(f1 => {
 f1.send(mensagem)
