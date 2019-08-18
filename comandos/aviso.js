@@ -16,9 +16,9 @@ let mensagem = args.join(" ")
     }
     */
 
-let on = message.guild.filter(m => m.presence.status === 'online')
-let npertube = message.guild.filter(m => m.presence.status === 'dnd')
-let ausente = message.guild.filter(m => m.presence.status === 'idle')
+let on = message.guildUsers.filter(m => m.presence.status === 'online')
+let npertube = message.guildUsers.filter(m => m.presence.status === 'dnd')
+let ausente = message.guildUsers.filter(m => m.presence.status === 'idle')
 const membros = message.guild.memberCount;
 
 on.forEach(f1 => {
