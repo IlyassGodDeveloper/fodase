@@ -105,9 +105,9 @@ lindo.login("NjExNjI3ODA3NDQwODk2MDIw.XVWn8g.CQpavRngVD3LbvScPvieD_Fyvj0")
 lindo.on('ready', async  => {
   console.log(`Comando automatizado iniciado.`);
 
-  let amanda =  ['a!fabianoamand']
+  let amanda =  ['a!fabianoamanda']
 
-    const x = 300
+    const x = 30
     setInterval(() => {
 
     lindo.channels.get("611664907825577986").send(amanda)
@@ -116,9 +116,9 @@ lindo.on('ready', async  => {
 })
 
 lindo.on('ready', async  => {
-  let div =  ["a!fabianobrabo _**🙈  Oi pessoa linda, venho te convidar para o servidor da família mais quente do Discord.**_\n\n⠀⠀⠀⠀⠀🎊  Eventos todos os dias\n\n⠀⠀⠀⠀🔱 Vagas na Staff\n\n⠀⠀⠀⠀⠀🔞  Conteúdo +18\n\n⠀⠀⠀⠀💕  Garotas\n\n⠀⠀⠀⠀⠀📌 E muuuito mais!\n\n⠀⠀🎈  __**Estamos te esperando!**__ 🎈\n\n⠀⠀➡️ ⠀https://discord.gg/yD4awUA\n\nhttps://cdn.discordapp.com/attachments/595731795190874112/595738403698376721/fgc.gif"] 
+  let div =  ["a!fabianobrab _**🙈  Oi pessoa linda, venho te convidar para o servidor da família mais quente do Discord.**_\n\n⠀⠀⠀⠀⠀🎊  Eventos todos os dias\n\n⠀⠀⠀⠀🔱 Vagas na Staff\n\n⠀⠀⠀⠀⠀🔞  Conteúdo +18\n\n⠀⠀⠀⠀💕  Garotas\n\n⠀⠀⠀⠀⠀📌 E muuuito mais!\n\n⠀⠀🎈  __**Estamos te esperando!**__ 🎈\n\n⠀⠀➡️ ⠀https://discord.gg/yD4awUA\n\nhttps://cdn.discordapp.com/attachments/595731795190874112/595738403698376721/fgc.gif"] 
  
-  const y = 25
+  const y = 300
   setInterval(() => {
 
  lindo.channels.get("612157427072368662").send(div)
