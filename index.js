@@ -107,7 +107,7 @@ lindo.on('ready', async  => {
 
   let amanda =  ['a!fabianoamanda']
 
-    const x = 30
+    const x = 60
     setInterval(() => {
 
     lindo.channels.get("611664907825577986").send(amanda)
