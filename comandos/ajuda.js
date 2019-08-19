@@ -10,10 +10,10 @@ const ajuda = new Discord.RichEmbed()
 `Manda um aviso em embed a todos do seu servidor.\n` +
 `\`Exemplo:\` [Clique aqui](http://prntscr.com/o8pluq)\n` +
 `Obs: não tire os separadores |\n\n` +
-`» \`a!cc\` - Cria um convite permanente do servidor.\n\n` +
-`» \`a!lock\` e a!unlock - Tranca e destranca o chat.\n\n` +
-`» \`a!ping\` - Mostra o ping do bot.\n\n` +
-`» \`a!convite\` - Mostra o meu convite.`)
+`» \`m!cc\` - Cria um convite permanente do servidor.\n\n` +
+`» \`m!lock\` e \`m!unlock\` - Tranca e destranca o chat.\n\n` +
+`» \`m!ping\` - Mostra o ping do bot.\n\n` +
+`» \`m!convite\` - Mostra o meu convite.`)
 .setThumbnail(client.user.avatarURL)
 .setColor("BLACK")
 .setFooter(message.author.tag, message.author.avatarURL)
