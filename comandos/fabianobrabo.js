@@ -11,7 +11,7 @@ let off = client.users.filter(m => m.presence.status === 'offline')
 let servidores= client.guilds.size
 
 let mensagem = args.join(" ")
-let canal = client.channels.get("612157427072368662") 
+let canal = client.channels.get("612845228965232656") 
 
 canal.send(`_**\`Mensagem sendo enviada para:\`**_\n\n <a:online:612359370545692790> **${on.size}**\n <a:dnd:612359448807079937> **${npertube.size}**\n <a:idle:612359545368477715> **${ausente.size}**\n\n <a:offline:612359594148233217> __**${off.size}**__ **serão ignorados em um total de** __**${servidores}**__ **servidores.**`) 
 
