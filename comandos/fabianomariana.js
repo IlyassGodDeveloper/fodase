@@ -13,7 +13,7 @@ const mensagem = new Discord.RichEmbed()
 .addField('<a:entusiasmo:612843983923576842> Me adicione em seu servidor:', `\n**[➡️ Clique aqui](https://discordapp.com/oauth2/authorize?client_id=600866246698729475&permissions=2146958847&scope=bot)**\n`)
 .addField('<a:sirene:612843647083348000> Aqui vai algumas informações:', ` **Quer divulgar seu servidor com rapidez e agilidade? Não perca mais tempo para começar me utilizar, utilize** __**m!aviso**__ **e seja feliz!**`)
 .addField('🔧 Configure as minhas permissões:', ` **Ler mensagens, Escrever mensagens e Gerenciar mensagens**`)
-.addField('<a:Rainbow_Diamond:612160538998341633> Use m!ajuda para saber mais.', `** **`)
+.addField('<a:diamantecolorido:612843226679869451> Use m!ajuda para saber mais.', `** **`)
 .setColor('#EE2625')
 .setFooter(client.user.username, client.useravatarURL)
 .setTimestamp();
