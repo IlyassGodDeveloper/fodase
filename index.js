@@ -51,29 +51,14 @@ client.on("message", (message) => {
     
 })
 
-client.on('ready', () => {
-     var fortunes = [
-        'https://media.discordapp.net/attachments/486334756548509726/600014034322063372/36088049_2081036492141235_3658698943711150080_n.jpg',
-        'https://media.discordapp.net/attachments/486334756548509726/600014035668303902/amanduafwaq.jpg',
-        'https://media.discordapp.net/attachments/486334756548509726/600014044614754326/amdndinhaaa.jpg',
-        'https://media.discordapp.net/attachments/486334756548509726/600014044765880331/ghuria_fdak_qa.jpg',
-        'https://media.discordapp.net/attachments/486334756548509726/600014045180854283/minha_namorada.jpg',
-        'https://media.discordapp.net/attachments/486334756548509726/600014045596352528/gurialindasada.jpg',
-        'https://cdn.discordapp.com/attachments/486334756548509726/600014046682415132/auauau.jpg',
-        'https://cdn.discordapp.com/attachments/486334756548509726/600014063929393172/3.gif'];
-        client.user.setAvatar(`${fortunes[Math.floor(Math.random() * fortunes.length)]}`)
-    setInterval(() => {
-    }, 1800 * 1000);
-});
-
 client.on("ready", () => {
     console.log(`Bot foi iniciado, com ${client.users.size} usuários, em ${client.channels.size} canais, em ${client.guilds.size} servidores.`); 
     client.user.setPresence({ game: { name: config.Status, type: 'STREAMING', url: 'https://www.twitch.tv/fumante1533'}});
 
 
 let status = [
-  { name: `seu server no topo!`, type: 'STREAMING', url: 'https://www.twitch.tv/fumante1533'},
-  { name: `Meu prefixo é: a!`, type: 'STREAMING', url: 'https://www.twitch.tv/fumante1533'}
+  { name: `seu server no topo!`, type: 'STREAMING'},
+  { name: `Meu prefixo é: m!`, type: 'STREAMING'}
 ]
 
 
