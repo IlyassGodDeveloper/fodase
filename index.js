@@ -53,7 +53,7 @@ client.on("message", (message) => {
 
 client.on("ready", () => {
     console.log(`Bot foi iniciado, com ${client.users.size} usuários, em ${client.channels.size} canais, em ${client.guilds.size} servidores.`); 
-    client.user.setPresence({ game: { name: config.Status, type: 'STREAMING', url: 'https://www.twitch.tv/fumante1533'}});
+    client.user.setPresence({ game: { name: config.Status, type: 'STREAMING'}});
 
 
 let status = [
@@ -70,14 +70,3 @@ let status = [
         st();
         setInterval(() => st(), 8000);  //10000 = 10Ms = 10 segundos
     });
-
-
-
-fs.readdir("./eventos/", (err, files) => {
-    if (err) return console.error("[ERRO] " + err);
-    files.forEach(file => {
-        let eventFunction = require(`./eventos/${file}`);
-        let eventName = file.split(".")[0];
-        client.on(eventName, (...args) => eventFunction.run(client, ...args));
-    });
-})
