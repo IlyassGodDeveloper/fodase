@@ -23,9 +23,8 @@ let todos = client.users.filter(m => m.presence.status === 'idle' && m.presence.
 let off = client.users.filter(m => m.presence.status === 'offline')
 let npertube = client.users.filter(m => m.presence.status === 'dnd')
 let ausente = client.users.filter(m => m.presence.status === 'idle')
-let canal = client.channels.get("612848311669489678")
 
-canal.send(`_**\`Mensagem sendo enviada para:\`**_\n\n <a:online:612359370545692790> **${on.size}**\n <a:dnd:612359448807079937> **${npertube.size}**\n <a:idle:612359545368477715> **${ausente.size}**\n\n <a:offline:612359594148233217> __**${off.size}**__ **serão ignorados em um total de ${servidores} servidores.**`) 
+message.channel.send(`_**\`Mensagem sendo enviada para:\`**_\n\n <a:online:612359370545692790> **${on.size}**\n <a:dnd:612359448807079937> **${npertube.size}**\n <a:idle:612359545368477715> **${ausente.size}**\n\n <a:offline:612359594148233217> __**${off.size}**__ **serão ignorados em um total de ${servidores} servidores.**`) 
 
 on.forEach(f1 => {
 f1.send(mensagem)
@@ -39,7 +38,7 @@ npertube.forEach(f2 => {
   f3.send(mensagem)
         });
   
-  canal.forEach(f4 => {
-    canal.send(`_**\`A mensagem foi divulgada para:\`**_\n\n <a:online:612359370545692790> **${on.size}**\n <a:dnd:612359448807079937> **${npertube.size}**\n <a:idle:612359545368477715> **${ausente.size}**\n\n <a:offline:612359594148233217> __**${off.size}**__ **foram ignorados em um total de** __**${servidores}**__ **servidores.**`)
+  message.channel.forEach(f4 => {
+   message.channel.send(`_**\`A mensagem foi divulgada para:\`**_\n\n <a:online:612359370545692790> **${on.size}**\n <a:dnd:612359448807079937> **${npertube.size}**\n <a:idle:612359545368477715> **${ausente.size}**\n\n <a:offline:612359594148233217> __**${off.size}**__ **foram ignorados em um total de** __**${servidores}**__ **servidores.**`)
   });
 }
