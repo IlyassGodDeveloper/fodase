@@ -70,3 +70,19 @@ let status = [
         st();
         setInterval(() => st(), 8000);  //10000 = 10Ms = 10 segundos
     });
+
+  client.on("guildMemberAdd", async member => {
+const mensagem = new Discord.RichEmbed()
+.setTitle(client.user.username)
+.setDescription(' **Olá, eu sou a Mariana, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**')
+.setThumbnail(client.user.avatarURL)
+.addField(':abraco: Me adicione em seu servidor:', `\n**:seta: [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=600866246698729475&permissions=2146958847&scope=bot)**\n`)
+.addField(':Aviso: Aqui vai algumas informações:', ` **Quer divulgar seu servidor com rapidez e agilidade? Não perca mais tempo para começar me utilizar, utilize** __**m!aviso**__ **e seja feliz!**`)
+.addField(':conf: Configure as minhas permissões:', ` **Ler mensagens, Escrever mensagens e Gerenciar mensagens**`)
+.addField(':diamantecolorido: Use m!ajuda para saber mais.', `** **`)
+.setColor('#EE2625')
+.setFooter(client.user.username, client.useravatarURL)
+.setTimestamp();
+       
+  member.send(mensagem)
+  })
