@@ -26,17 +26,17 @@ let npertube = message.guild.members.filter(m => m.presence.status === 'dnd')
 let ausente = message.guild.members.filter(m => m.presence.status === 'idle')
 const membros = message.guild.memberCount;
 
-on.forEach(f1 => {
-f1.send(Embed)
-        })
+//on.forEach(f1 => {
+//f1.send(Embed)
+   //     })
 
-npertube.forEach(f2 => {
-       f2.send(Embed)
-        });
+//npertube.forEach(f2 => {
+     //  f2.send(Embed)
+     //   });
 
-  ausente.forEach(f3 => {
-  f3.send(Embed)
-        });
+ // ausente.forEach(f3 => {
+//  f3.send(Embed)
+ //       });
 
    message.channel.send("*\`Mensagem enviada para\`\* ***`" + membros + "`*** *\`membros\`\*")
     message.channel.send("**`Mensagem a ser enviada:`**")
