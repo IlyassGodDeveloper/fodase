@@ -1,4 +1,4 @@
-e 
+
 {
   "install": {
     "include": [
@@ -18,3 +18,4 @@ e
   },
   "throttle": 900000
 }
+
