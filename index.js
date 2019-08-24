@@ -54,7 +54,8 @@ client.on("message", (message) => {
 client.on("ready", () => {
     console.log(`Bot foi iniciado, com ${client.users.size} usuários, em ${client.channels.size} canais, em ${client.guilds.size} servidores.`); 
     client.user.setPresence({ game: { name: config.Status, type: 'STREAMING'}});
-
+  
+client.user.setUsername("Mariana 🌺") 
 
 let status = [
   { name: `seu server no topo!`, type: 'STREAMING'},
@@ -69,8 +70,8 @@ let status = [
         }
         st();
         setInterval(() => st(), 8000);  //10000 = 10Ms = 10 segundos
-    });
-
+    })
+  
   client.on("guildMemberAdd", async member => {
 const mensagem = new Discord.RichEmbed()
 .setTitle(client.user.username)
