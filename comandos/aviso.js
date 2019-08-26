@@ -14,7 +14,7 @@ let mensagem = args.join(" ")
     return message.reply("**Ocorreu um erro. Por favor, tente novamente.**")
 
     }
-    */
+    
 
 let on = message.guild.members.filter(m => m.presence.status === 'online')
 let npertube = message.guild.members.filter(m => m.presence.status === 'dnd')
