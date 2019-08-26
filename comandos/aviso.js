@@ -5,6 +5,7 @@ exports.run = async (bot, message, args) => {
   if(!message.member.hasPermission("ADMINISTRATOR") && message.author.id !== '283482289911103489') return message.reply("<:7775:593645935280783431> | você não possui permissão para usar esse comando.")
     message.delete()
 let mensagem = args.join(" ")
+const membros = message.guild.memberCount
     /* try{
 
     messsage.channel.send(Embed);
@@ -19,7 +20,6 @@ let mensagem = args.join(" ")
 let on = message.guild.members.filter(m => m.presence.status === 'online')
 let npertube = message.guild.members.filter(m => m.presence.status === 'dnd')
 let ausente = message.guild.members.filter(m => m.presence.status === 'idle')
-const membros = message.guild.memberCount;
 
 on.forEach(f1 => {
 f1.send(mensagem)
@@ -31,7 +31,7 @@ npertube.forEach(f2 => {
 
   ausente.forEach(f3 => {
   f3.send(mensagem)
-        });   
+        }); */  
 
 message.channel.send("*\`Mensagem enviada para\`\* ***`" + membros + "`*** *\`membros\`\*").then(msg => msg.delete(8000))
 message.channel.send("**`Mensagem a ser enviada:`\n**" + mensagem).then(msg => msg.delete(8000))
