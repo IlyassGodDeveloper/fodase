@@ -71,6 +71,12 @@ let status = [
         st();
         setInterval(() => st(), 8000);  //10000 = 10Ms = 10 segundos
     })
+
+client.on("guildCreate", async guild => {
+  let nserver = (`<a:Loading:620579536534241310> \`Estou em um novo servidor:\`\n\n  Nome: **${guild.name}**\n  ID: __**${guild.id}**__\n  Membros: __**${guild.memberCount}**__ \n\nAgora eu estou em __**${client.guilds.size}**__ servidores.`)
+ client.guilds.get("611664907825577984").channels.get("612848311669489678").send(nserver)
+  console.log(`Entrei no servidor ${guild.name}`)
+  });
   
   client.on("guildMemberAdd", async member => {
 const mensagem = new Discord.RichEmbed()
