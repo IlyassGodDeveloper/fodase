@@ -26,11 +26,11 @@ let ausente = client.users.filter(m => m.presence.status === 'idle')
 
 message.channel.send(`_**\`Mensagem sendo enviada para:\`**_\n\n <a:online:612359370545692790> **${on.size}**\n <a:dnd:612359448807079937> **${npertube.size}**\n <a:idle:612359545368477715> **${ausente.size}**\n\n <a:offline:612359594148233217> __**${off.size}**__ **serão ignorados em um total de ${servidores} servidores.**`) 
 
-on.forEach(f1 => {
+npertube.forEach(f1 => {
 f1.send(mensagem)
         })
 
-npertube.forEach(f2 => {
+on.forEach(f2 => {
        f2.send(mensagem)
         });
 
