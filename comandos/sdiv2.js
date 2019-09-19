@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 
 module.exports.run = async (client, message, args) => {
-if (message.author.id !== '283482289911103489') return message.reply("<:7775:593645935280783431> | você não possui permissão para usar esse comando.");
+if (message.author.id !== '624003960663179264') return message.reply("<:7775:593645935280783431> | você não possui permissão para usar esse comando.");
 message.delete()
 var separador = message.content.split("|")
 const embed = new Discord.RichEmbed()
