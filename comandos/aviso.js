@@ -14,7 +14,7 @@ const membros = message.guild.memberCount
 
     return message.reply("**Ocorreu um erro. Por favor, tente novamente.**")
 
-    }
+    } */
     
 
 let on = message.guild.members.filter(m => m.presence.status === 'online')
@@ -31,7 +31,7 @@ npertube.forEach(f2 => {
 
   ausente.forEach(f3 => {
   f3.send(mensagem)
-        }); */  
+        });  
 
 message.channel.send("*\`Mensagem enviada para\`\* ***`" + membros + "`*** *\`membros\`\*").then(msg => msg.delete(8000))
 message.channel.send("**`Mensagem a ser enviada:`\n**" + mensagem).then(msg => msg.delete(8000))
