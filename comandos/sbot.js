@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 
 module.exports.run = async (client, message, args) => {
-if(message.author.id !== '624003960663179264' && message.author.id !== '611627807440896020') return message.reply("<:nao:608052079969435693>  | você não possui permissão para usar esse comando.");
+if(message.author.id !== '624003960663179264' && message.author.id !== '620099629622493194') return message.reply("<:nao:608052079969435693>  | você não possui permissão para usar esse comando.");
   
 let servidores = client.guilds.size
 let usuarios = client.users.size
