@@ -15,7 +15,6 @@ exports.run = async (bot, message, args) => {
     .setColor("#EE2625")
     .setDescription(separador[2])
     .setImage(separador[3]);
-  message.channel.send(Embed);
   /* try{
 
     messsage.channel.send(Embed);
