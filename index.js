@@ -91,14 +91,14 @@ client.on("guildMemberAdd", async member => {
     )
     .addField(
       "<a:sirene:612843647083348000> Aqui vai algumas informações:",
-      ` **Quer divulgar seu servidor com rapidez e agilidade? Não perca mais tempo para começar me utilizar, utilize** __**!aviso**__ **e seja feliz!**`
+      ` **Quer divulgar seu servidor com rapidez e agilidade? Não perca mais tempo para começar me utilizar, utilize** __***aviso**__ **e seja feliz!**`
     )
     .addField(
       "<a:conf:613018981363613716> Configure as minhas permissões:",
       ` **Ler mensagens, Escrever mensagens e Gerenciar mensagens**`
     )
     .addField(
-      "<a:diamantecolorido:612843226679869451> Use !ajuda para saber mais.",
+      "<a:diamantecolorido:612843226679869451> Use *ajuda para saber mais.",
       `** **`
     )
     .setColor("BLACK")

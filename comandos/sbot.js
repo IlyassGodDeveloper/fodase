@@ -15,7 +15,7 @@ module.exports.run = async (client, message, args) => {
   const mensagem = new Discord.RichEmbed()
     .setTitle(client.user.username)
     .setDescription(
-      " **Olá, eu sou a Sofia divulgadora, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**"
+      " **Olá, eu sou a Sofia divulgadora, uma bot focado em anúncios e divulgação, estou aqui para te ajudar.**"
     )
     .setThumbnail(client.user.avatarURL)
     .addField(
@@ -24,14 +24,14 @@ module.exports.run = async (client, message, args) => {
     )
     .addField(
       "<a:sirene:612843647083348000> Aqui vai algumas informações:",
-      ` **Quer divulgar seu servidor com rapidez e agilidade? Não perca mais tempo para começar me utilizar, utilize** __**!aviso**__ **e seja feliz!**`
+      ` **Quer divulgar seu servidor com rapidez e agilidade? Não perca mais tempo para começar me utilizar, utilize** __***aviso**__ **e seja feliz!**`
     )
     .addField(
       "<a:conf:613018981363613716> Configure as minhas permissões:",
       ` **Ler mensagens, Escrever mensagens e Gerenciar mensagens**`
     )
     .addField(
-      "<a:diamantecolorido:612843226679869451> Use !ajuda para saber mais.",
+      "<a:diamantecolorido:612843226679869451> Use *ajuda para saber mais.",
       `** **`
     )
     .setColor("BLACK")
