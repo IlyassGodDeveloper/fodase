@@ -58,7 +58,7 @@ client.on("ready", () => {
 
   let status = [
     { name: `seu server no topo!`, type: "STREAMING" },
-    { name: `Meu prefixo é: *`, type: "STREAMING" }
+    { name: `Meu prefixo é: !`, type: "STREAMING" }
   ];
 
   function st() {
@@ -87,7 +87,7 @@ client.on("guildMemberAdd", async member => {
     .setThumbnail(client.user.avatarURL)
     .addField(
       "<a:entusiasmo:612843983923576842> Me adicione em seu servidor:",
-      `\n**<a:seta:613108373356806165> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=628320540494397450&permissions=2146958847&scope=bot)**\n`
+      `\n**<a:seta:613108373356806165> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=613684388500209694&permissions=2146958847&scope=bot)**\n`
     )
     .addField(
       "<a:sirene:612843647083348000> Aqui vai algumas informações:",

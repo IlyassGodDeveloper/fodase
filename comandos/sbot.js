@@ -2,8 +2,8 @@ const Discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
   if (
-    message.author.id !== "568234099093798923" &&
-    message.author.id !== "609790051286777927"
+    message.author.id !== "624003960663179264" &&
+    message.author.id !== "620099629622493194"
   )
     return message.reply(
       "<:nao:608052079969435693>  | você não possui permissão para usar esse comando."
@@ -20,14 +20,14 @@ module.exports.run = async (client, message, args) => {
     .setThumbnail(client.user.avatarURL)
     .addField(
       "<a:entusiasmo:612843983923576842> Me adicione em seu servidor:",
-      `\n**<a:seta:613108373356806165> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=628320540494397450&permissions=2146958847&scope=bot)**\n`
+      `\n**<a:seta:613108373356806165> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=613684388500209694&permissions=2146958847&scope=bot)**\n`
     )
     .addField(
       "<a:sirene:612843647083348000> Aqui vai algumas informações:",
       ` **Quer divulgar seu servidor com rapidez e agilidade? Não perca mais tempo para começar me utilizar, utilize** __***aviso**__ **e seja feliz!**`
     )
     .addField(
-      "<a:conf:613018981363613716> Configure as minhas permissões:"
+      "<a:conf:613018981363613716> Configure as minhas permissões:",
       ` **Ler mensagens, Escrever mensagens e Gerenciar mensagens**`
     )
     .addField(
