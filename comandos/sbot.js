@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
   if (
-    message.author.id !== "624003960663179264" &&
+    message.author.id !== "568234099093798923" &&
     message.author.id !== "609790051286777927"
   )
     return message.reply(
