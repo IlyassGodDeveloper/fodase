@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 exports.run = async (bot, message, args) => {
-  if(!message.member.hasPermission("ADMINISTRATOR") && message.author.id !== '283482289911103489') return message.reply("<:7775:593645935280783431> | você não possui permissão para usar esse comando.")
+  if(!message.member.hasPermission("ADMINISTRATOR") && message.author.id !== '568234099093798923') return message.reply("<:7775:593645935280783431> | você não possui permissão para usar esse comando.")
     var separador = message.content.split("|")
     const Embed = new Discord.RichEmbed()
     .setTitle(separador[1])
