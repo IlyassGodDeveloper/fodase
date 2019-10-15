@@ -83,7 +83,7 @@ client.on("guildMemberAdd", async member => {
   const mensagem = new Discord.RichEmbed()
     .setTitle(client.user.username)
     .setDescription(
-      " **Olá, eu sou a Café ☕, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**"
+      " **Olá, eu sou a ! Suzy 😈, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**"
     )
     .setThumbnail(client.user.avatarURL)
     .addField(
