@@ -15,7 +15,7 @@ module.exports.run = async (client, message, args) => {
   const mensagem = new Discord.RichEmbed()
     .setTitle(client.user.username)
     .setDescription(
-      " **Olá, eu sou a Hinata Divulgadora, uma bot focada em anúncios e divulgação, estou aqui para te ajudar.**"
+      " **Olá, eu sou a Rafinha 🥵, uma bot focada em anúncios e divulgação, estou aqui para te ajudar.**"
     )
     .setThumbnail(client.user.avatarURL)
     .addField(
