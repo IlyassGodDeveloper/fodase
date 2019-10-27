@@ -15,23 +15,23 @@ module.exports.run = async (client, message, args) => {
   const mensagem = new Discord.RichEmbed()
     .setTitle(client.user.username)
     .setDescription(
-      " **Olá, eu sou a Rafinha 🥵, uma bot focada em anúncios e divulgação, estou aqui para te ajudar.**"
+      " **Olá, eu sou a Ruiva 🍁, uma bot focada em anúncios e divulgação, estou aqui para te ajudar.**"
     )
     .setThumbnail(client.user.avatarURL)
     .addField(
-      "<a:entusiasmo:612843983923576842> Me adicione em seu servidor:",
-      `\n**<a:seta:613108373356806165> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=628320800058900481&permissions=2146958847&scope=bot)**\n`
+      "<a:feliz:638096526169604106> Me adicione em seu servidor:",
+      `\n**---->> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=628320725509472267&permissions=2146958847&scope=bot)**\n`
     )
     .addField(
-      "<a:sirene:612843647083348000> Aqui vai algumas informações:",
+      "<a:firedarkzin:638096868525735947> Aqui vai algumas informações:",
       ` **Quer divulgar seu servidor com rapidez e agilidade? Não perca mais tempo para começar me utilizar, utilize** __***aviso**__ **e seja feliz!**`
     )
     .addField(
-      "<a:conf:613018981363613716> Configure as minhas permissões:",
+      "🔧 Configure as minhas permissões:",
       ` **Ler mensagens, Escrever mensagens e Gerenciar mensagens**`
     )
     .addField(
-      "<a:diamantecolorido:612843226679869451> Use *ajuda para saber mais.",
+      "<a:moneyzin:638096761680035889> Use *ajuda para saber mais.",
       `** **`
     )
     .setColor("BLACK")
