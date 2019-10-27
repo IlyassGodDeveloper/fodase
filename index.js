@@ -54,7 +54,7 @@ client.on("ready", () => {
   );
   client.user.setPresence({ game: { name: config.Status, type: "STREAMING" } });
 
-  client.user.setUsername("Hinata Divulgadora ⚡");
+  client.user.setUsername("Rafinha 🥵");
 
   let status = [
     { name: `seu server no topo!`, type: "STREAMING" },
@@ -71,10 +71,10 @@ client.on("ready", () => {
 });
 
 client.on("guildCreate", async guild => {
-  let nserver = `<a:Loading:620579536534241310> \`Estou em um novo servidor:\`\n\n  Nome: **${guild.name}**\n  ID: __**${guild.id}**__\n  Membros: __**${guild.memberCount}**__ \n\nAgora eu estou em __**${client.guilds.size}**__ servidores.`;
+  let nserver = `<a:dnd:630190774105014293> \`Estou em um novo servidor:\`\n\n  Nome: **${guild.name}**\n  ID: __**${guild.id}**__\n  Membros: __**${guild.memberCount}**__ \n\nAgora eu estou em __**${client.guilds.size}**__ servidores.`;
   client.guilds
-    .get("611664907825577984")
-    .channels.get("612848311669489678")
+    .get("589183753696313635")
+    .channels.get("638089465856000021")
     .send(nserver);
   console.log(`Entrei no servidor ${guild.name}`);
 });
@@ -83,7 +83,7 @@ client.on("guildMemberAdd", async member => {
   const mensagem = new Discord.RichEmbed()
     .setTitle(client.user.username)
     .setDescription(
-      " **Olá, eu sou a Hinata Divulgadora, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**"
+      " **Olá, eu sou a Rafinha, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**"
     )
     .setThumbnail(client.user.avatarURL)
     .addField(
