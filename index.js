@@ -54,7 +54,7 @@ client.on("ready", () => {
   );
   client.user.setPresence({ game: { name: config.Status, type: "STREAMING" } });
 
-  client.user.setUsername("Ruiva 🍁");
+  client.user.setUsername("𝓡.𝓓.𝓟 🔞");
 
   let status = [
     { name: `seu server no topo!`, type: "STREAMING" },
@@ -83,12 +83,12 @@ client.on("guildMemberAdd", async member => {
   const mensagem = new Discord.RichEmbed()
     .setTitle(client.user.username)
     .setDescription(
-      " **Olá, eu sou a Ruiva 🍁, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**"
+      " **Olá, eu sou a 𝓡.𝓓.𝓟 🔞, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**"
     )
     .setThumbnail(client.user.avatarURL)
     .addField(
       "<a:feliz:638096526169604106> Me adicione em seu servidor:",
-      `\n**-----> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=628320725509472267&permissions=2146958847&scope=bot)**\n`
+      `\n**-----> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=637329519824338984&permissions=2146958847&scope=bot)**\n`
     )
     .addField(
       "<a:firedarkzin:638096868525735947> Aqui vai algumas informações:",
