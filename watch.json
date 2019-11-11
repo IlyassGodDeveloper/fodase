@@ -1,4 +1,4 @@
-L{
+{
   "install": {
     "include": ["^package\\.json$", "^\\.env$"]
   },
@@ -6,4 +6,6 @@ L{
     "exclude": ["^public/", "^dist/"],
     "include": ["\\.js$", "\\.json"]
   },
-  "throttle": 900000}}
+  "throttle": 900000
+  
+}

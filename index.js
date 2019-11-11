@@ -73,8 +73,8 @@ client.on("ready", () => {
 client.on("guildCreate", async guild => {
   let nserver = `<a:dnd:630190774105014293> \`Estou em um novo servidor:\`\n\n  Nome: **${guild.name}**\n  ID: __**${guild.id}**__\n  Membros: __**${guild.memberCount}**__ \n\nAgora eu estou em __**${client.guilds.size}**__ servidores.`;
   client.guilds
-    .get("589183753696313635")
-    .channels.get("638089465856000021")
+    .get("601179649480851457")
+    .channels.get("643556175673032714")
     .send(nserver);
   console.log(`Entrei no servidor ${guild.name}`);
 });
