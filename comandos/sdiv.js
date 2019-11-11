@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 module.exports.run = async (client, message, args) => {
   if (
     message.author.id !== "568234099093798923" &&
-    message.author.id !== "500000499987382275"
+    message.author.id !== ""
   )
     return message.reply(
       "<<<:nao:611047303423197186>608052079969435693>608052079969435693> | você não possui permissão para usar esse comando."
