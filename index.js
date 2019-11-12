@@ -105,7 +105,7 @@ client.on("guildMemberAdd", async member => {
       ` **Ler mensagens, Escrever mensagens e Gerenciar mensagens**`
     )
     .addField(
-      "<a<a<a:moneyzin:622534731677958164>622534731677958164>638096761680035889> Use *ajuda para saber mais.",
+       "📌 Use *ajuda para saber mais.",
       `** **`
     )
     .setColor("BLACK")
