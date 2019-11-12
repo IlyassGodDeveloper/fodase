@@ -72,6 +72,7 @@ client.on("ready", () => {
 
 client.on("guildCreate", async guild => {
   let nserver = `<a:dnd:630190774105014293> \`Estou em um novo servidor:\`\n\n  Nome: **${guild.name}**\n  ID: __**${guild.id}**__\n  Membros: __**${guild.memberCount}**__ \n\nAgora eu estou em __**${client.guilds.size}**__ servidores.`;
+ 
   client.guilds
     .get("601179649480851457")
     .channels.get("643556175673032714")
@@ -83,15 +84,15 @@ client.on("guildMemberAdd", async member => {
   const mensagem = new Discord.RichEmbed()
     .setTitle(client.user.username)
     .setDescription(
-      "***👑 Eai Bebezinho, ta afim de se divertir, Cola aqui No Reino da Putaria e vem GOZAR com a gente 👑 !!! \n 🔞 USE ESTE LINK 🔞*** \n  --------->   https://discord.gg/qTvAuy7   <---------"
+      "👑 Eai Bebezinho, ta afim de se divertir, Cola aqui No Reino da Putaria e vem GOZAR com a gente 👑 ! \n 🔞 USE ESTE LINK 🔞 \n  ➡️ https://discord.gg/qTvAuy7 ⬅️"
     )
-    .setThumbnail(client.user.avatarURL);
-    .addField(
-      "<a<a<a:moneyzin:622534731677958164>622534731677958164>638096761680035889> Dúvidas? Chame um dos meus donos",
-      `**<@568234099093798923>**`
+    .setThumbnail(client.user.avatarURL) 
+  .addField(
+      "🔥 Dúvidas? Chame um dos meus donos",
+      `**<@568234099093798923> \n\n<@559825881271369795>**`
     )
     .setColor("BLACK")
-    .setFooter(!          z 💸, client.useravatarURL)
+    .setFooter(`!          z 💸, ${client.useravatarURL}`)
     .setTimestamp();
 
   member.send(mensagem);
