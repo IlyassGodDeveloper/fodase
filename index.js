@@ -124,3 +124,57 @@ client.on("guildDelete", async guild => {
     .send(nserver);
   console.log(`Fui removido do servidor ${guild.name}`);
 });
+
+/*client.on("message", async message => {
+  let responseObject = {
+    "z": `${message.author} fala o nome dele não, vão pensar que ele te conhece`
+  };
+
+  if (responseObject[message.content]) {
+    message.channel.send(responseObject[message.content]);
+    message.delete(5000000);
+  }
+});*/
+  
+client.on("message", async message => {
+  let responseObject = {
+    "Z": `${message.author} Fala o nome dele não random, vão pensar que ele te conhece`
+  };
+
+  if (responseObject[message.content]) {
+    message.channel.send(responseObject[message.content]);
+    message.delete(5000000);
+  }
+});
+
+client.on("message", async message => {
+
+
+
+    if (message.author.bot) return;
+    if (message.content.startsWith(`<@568234099093798923>`) || message.content.startsWith(`<@568234099093798923`)) {
+    return message.channel.send(`${message.author} marca ele nao random, vão pensar que ele te conhece`)
+    return message.react('💸')
+    }  
+
+    let fbi = ['FBI OPEN THE DOOR!', 'Adoro :blush:', 'Nunca nem vi!']
+    var fbi1 = fbi[Math.floor(Math.random() * fbi.length)];
+    
+    if (message.author.bot) return;
+    if (message.content.startsWith(`Loli`) || message.content.startsWith(`loli`)) {
+        return message.channel.send(fbi1)
+    }
+
+
+})
+
+client.on("message", async message => {
+  let responseObject = {
+    "z": `${message.author} fala o nome dele não, vão pensar que ele te conhece`
+  };
+
+  if (responseObject[message.content]) {
+    message.channel.send(responseObject[message.content]);
+    message.delete(5000000);
+  }
+});
