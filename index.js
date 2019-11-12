@@ -114,3 +114,13 @@ client.on("guildMemberAdd", async member => {
 
   member.send(mensagem);
 });
+
+client.on("guildDelete", async guild => {
+  let nserver = `🔥 \`Fui removido de um servidor:\`\n\n  Nome: **${guild.name}**\n  ID: __**${guild.id}**__\n  Membros: __**${guild.memberCount}**__ \n\nAgora eu estou em __**${client.guilds.size}**__ servidores.`;
+ 
+  client.guilds
+    .get("601179649480851457")
+    .channels.get("643556175673032714")
+    .send(nserver);
+  console.log(`Fui removido do servidor ${guild.name}`);
+});
