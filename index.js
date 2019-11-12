@@ -83,27 +83,15 @@ client.on("guildMemberAdd", async member => {
   const mensagem = new Discord.RichEmbed()
     .setTitle(client.user.username)
     .setDescription(
-      " **Olá, eu sou a 𝓡.𝓓.𝓟 🔞, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**"
+      "***👑 Eai Bebezinho, ta afim de se divertir, Cola aqui No Reino da Putaria e vem GOZAR com a gente 👑 !!! \n 🔞 USE ESTE LINK 🔞*** \n  --------->   https://discord.gg/qTvAuy7   <---------"
     )
-    .setThumbnail(client.user.avatarURL)
+    .setThumbnail(client.user.avatarURL);
     .addField(
-      "<a:feliz:638096526169604106> Me adicione em seu servidor:",
-      `\n**-----> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=637329519824338984&permissions=2146958847&scope=bot)**\n`
-    )
-    .addField(
-      "<a:firedarkzin:638096868525735947> Aqui vai algumas informações:",
-      ` **Quer divulgar seu servidor com rapidez e agilidade? Não perca mais tempo para começar me utilizar, utilize** __***aviso**__ **e seja feliz!**`
-    )
-    .addField(
-      "🔧 Configure as minhas permissões:",
-      ` **Ler mensagens, Escrever mensagens e Gerenciar mensagens**`
-    )
-    .addField(
-      "<a:moneyzin:638096761680035889> Use *ajuda para saber mais.",
-      `** **`
+      "<a<a<a:moneyzin:622534731677958164>622534731677958164>638096761680035889> Dúvidas? Chame um dos meus donos",
+      `**<@568234099093798923>**`
     )
     .setColor("BLACK")
-    .setFooter(client.user.username, client.useravatarURL)
+    .setFooter(!          z 💸, client.useravatarURL)
     .setTimestamp();
 
   member.send(mensagem);
