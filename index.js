@@ -178,3 +178,45 @@ client.on("message", async message => {
     message.delete(5000000);
   }
 });
+client.on("message", async message => {
+  let responseObject = {
+    "King": `${message.author} Tá falando o nome dele porque? Quer fazer gf com ele?`
+  };
+
+  if (responseObject[message.content]) {
+    message.channel.send(responseObject[message.content]);
+    message.delete(5000000);
+  }
+});
+
+client.on("message", async message => {
+
+
+
+    if (message.author.bot) return;
+    if (message.content.startsWith(`<@559825881271369795>`) || message.content.startsWith(`<@559825881271369795>`)) {
+    return message.channel.send(`${message.author} Marca ele não, ele está ocupado, fazendo gf ou x.cam !!!`)
+    return message.react('💸')
+    }  
+
+    let fbi = ['FBI OPEN THE DOOR!', 'Adoro :blush:', 'Nunca nem vi!']
+    var fbi1 = fbi[Math.floor(Math.random() * fbi.length)];
+    
+    if (message.author.bot) return;
+    if (message.content.startsWith(`Loli`) || message.content.startsWith(`loli`)) {
+        return message.channel.send(fbi1)
+    }
+
+
+})
+
+client.on("message", async message => {
+  let responseObject = {
+    "king": `${message.author} tá falando o nome dele porque? Quer fazer gf com ele?`
+  };
+
+  if (responseObject[message.content]) {
+    message.channel.send(responseObject[message.content]);
+    message.delete(5000000);
+  }
+});
