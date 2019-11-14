@@ -5,7 +5,7 @@ exports.run = (bot,message,args) => {
 
     .setTitle("🤖 Convite do bot")
     .setColor("BLACK")
-    .setDescription(`**Clique [aqui](https://discordapp.com/oauth2/authorize?client_id=637329519824338984&permissions=2146958847&scope=bot) para adicionar o bot em seu servidor.**`)
+    .setDescription(`**Clique [aqui](https://discordapp.com/oauth2/authorize?client_id=628320342632300574&permissions=2146958847&scope=bot) para adicionar o bot em seu servidor.**`)
     .setFooter(`${bot.user.username}`, bot.user.avatarURL)
     .setTimestamp()
 
