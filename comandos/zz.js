@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
-  if (message.author.id == "559825881271369795")
+  if (message.author.id == "1")
     return message.reply("você esta na blacklist.");
   if (message.author.id == "1") return message.reply("você esta na blacklist.");
   if (!message.member.hasPermission("BAN_MEMBERS"))
