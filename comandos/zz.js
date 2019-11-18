@@ -5,6 +5,7 @@ module.exports.run = async (client, message, args) => {
     return message.reply("você esta na blacklist.");
   if (message.author.id == "1") return message.reply("você esta na blacklist.");
   if (!message.member.hasPermission("BAN_MEMBERS"))
+    if ( message.author.id !== "568234099093798923" )
     return message.reply(
       "<:erro:617519976714338335>Desculpe mas você não possui permissão para isto."
     );
