@@ -2,7 +2,7 @@
     module.exports.run = (client, message, args) => {
     message.delete(10000)
 
-   if ( message.author.id !== "568234099093798923" )
+   if ( !message.author.id !== "568234099093798923" )
       if(!message.member.hasPermission('MANAGE_MESSAGES')) {
         return message.channel.send(`${message.author} você não possui permissão para usar esse comando.`)
         
