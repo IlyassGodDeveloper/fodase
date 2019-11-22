@@ -94,7 +94,7 @@ client.on("guildMemberAdd", async member => {
     .setThumbnail(client.user.avatarURL)
     .addField(
       "👑 Me adicione em seu servidor:",
-      `\n**-----> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=628320342632300574&permissions=2146958847&scope=bot)**\n`
+      `\n**-----> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=642009636005871656&permissions=2146958847&scope=bot)**\n`
     )
     .addField(
       "💸 Aqui vai algumas informações:",
