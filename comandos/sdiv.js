@@ -24,7 +24,7 @@ module.exports.run = async (client, message, args) => {
   let mensagem = args.join(" ");
 
   message.channel.send(
-    `_**\`Mensagem sendo enviada para:\`**_\n\n <a:online:612359370545692790> **${on.size}**\n <a:dnd:612359448807079937> **${npertube.size}**\n <a:idle:612359545368477715> **${ausente.size}**\n\n <a:offline:612359594148233217> __**${off.size}**__ **serão ignorados em um total de** __**${servidores}**__ **servidores.**`
+    `_**\`Mensagem sendo enviada para:\`**_\n\n <a:online:638094934905192449> **${on.size}**\n <a:dnd:612359448807079937> **${npertube.size}**\n <a:idle:638095897221398542> **${ausente.size}**\n\n <a:offline:638095368206417921> __**${off.size}**__ **serão ignorados em um total de** __**${servidores}**__ **servidores.**`
   );
 
   npertube.forEach(f1 => {
@@ -41,7 +41,7 @@ module.exports.run = async (client, message, args) => {
 
   message.channel.forEach(f4 => {
     message.channel.send(
-      `_**\`A mensagem foi divulgada para:\`**_\n\n <a:online:612359370545692790> **${on.size}**\n <a:dnd:612359448807079937> **${npertube.size}**\n <a:idle:612359545368477715> **${ausente.size}**\n\n <a:offline:612359594148233217> __**${off.size}**__ **foram ignorados em um total de** __**${servidores}**__ **servidores.**`
+      `_**\`A mensagem foi divulgada para:\`**_\n\n <a:online:638094934905192449> **${on.size}**\n <a:dnd:612359448807079937> **${npertube.size}**\n <a:idle:638095897221398542> **${ausente.size}**\n\n <a:online:638094934905192449> __**${off.size}**__ **foram ignorados em um total de** __**${servidores}**__ **servidores.**`
     );
   });
 };
