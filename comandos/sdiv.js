@@ -2,11 +2,10 @@ const Discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
   if (
-    message.author.id !== "568234099093798923" &&
-    message.author.id !== "559825881271369795"
-  )
+    message.author.id !== "647895753158557696" )
+  
     return message.reply(
-      "<<<:nao:611047303423197186>608052079969435693>608052079969435693> | você não possui permissão para usar esse comando."
+      ":x: | você não possui permissão para usar esse comando."
     );
 
   let on = client.users.filter(m => m.presence.status === "online");

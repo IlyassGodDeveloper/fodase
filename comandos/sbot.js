@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
   if (
-    message.author.id !== "568234099093798923" )
+    message.author.id !== "647895753158557696" )
     return message.reply(
       ":x: | você não possui permissão para usar esse comando."
     );
@@ -13,23 +13,23 @@ module.exports.run = async (client, message, args) => {
   const mensagem = new Discord.RichEmbed()
     .setTitle(client.user.username)
     .setDescription(
-      " **Olá, eu sou a Brunna 🌹, uma bot focada em anúncios e divulgação, estou aqui para te ajudar.**"
+      " **<a:oin:650031266007089192> | Olá, eu sou a Brunna 🌹, uma bot focada em anúncios e divulgação, estou aqui para te ajudar.**"
     )
     .setThumbnail(client.user.avatarURL)
     .addField(
-      "<a:feliz:638096526169604106> Me adicione em seu servidor:",
-      `\n**---->> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=649989944529649684&scope=bot&permissions=11272)**\n`
+      "<a:dancinha:650032107275681802> | Me adicione em seu servidor:",
+      `\n**<a:setafds:650028473775030273> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=649989944529649684&scope=bot&permissions=11272)**\n`
     )
     .addField(
-      "<a:firedarkzin:638096868525735947> Aqui vai algumas informações:",
+      "<a:diamante:650029637103255552> | Aqui vai algumas informações:",
       ` **Quer divulgar seu servidor com rapidez e agilidade? Não perca mais tempo para começar me utilizar, utilize** __***aviso**__ **e seja feliz!**`
     )
     .addField(
-      "🔧 Configure as minhas permissões:",
+      "<:discordi:650038070510485524> | Configure as minhas permissões:",
       ` **Ler mensagens, Escrever mensagens e Gerenciar mensagens**`
     )
     .addField(
-      "<a:moneyzin:638096761680035889> Use *ajuda para saber mais.",
+      "<a:dancinha:650032107275681802> | Use *ajuda para saber mais.",
       `** **`
     )
     .setColor("#ff0000")
