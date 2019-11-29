@@ -54,7 +54,7 @@ client.on("ready", () => {
   );
   client.user.setPresence({ game: { name: config.Status, type: "STREAMING" } });
 
-  client.user.setUsername("𝓡.𝓓.𝓟 🔞");
+  client.user.setUsername("Brunna 🌹");
 
   let status = [
     { name: `seu server no topo!`, type: "STREAMING" },
@@ -89,12 +89,12 @@ client.on("guildMemberAdd", async member => {
   const mensagem = new Discord.RichEmbed()
     .setTitle(client.user.username)
     .setDescription(
-      " **Olá, eu sou a 𝓡.𝓓.𝓟 🔞, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**"
+      " **Olá, eu sou a Brunna, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**"
     )
     .setThumbnail(client.user.avatarURL)
     .addField(
       "👑 Me adicione em seu servidor:",
-      `\n**-----> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=642009636005871656&permissions=2146958847&scope=bot)**\n`
+      `\n**-----> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=649989944529649684&scope=bot&permissions=11272)**\n`
     )
     .addField(
       "💸 Aqui vai algumas informações:",
@@ -178,7 +178,7 @@ client.on("message", async message => {
     message.delete(5000000);
   }
 });
-client.on("message", async message => {
+/*client.on("message", async message => {
   let responseObject = {
     "King": `${message.author} Tá falando o nome dele porque? Quer fazer gf com ele?`
   };
@@ -219,4 +219,4 @@ client.on("message", async message => {
     message.channel.send(responseObject[message.content]);
     message.delete(5000000);
   }
-});
+});*/
