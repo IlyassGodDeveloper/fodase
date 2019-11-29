@@ -2,9 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
   if (
-    message.author.id !== "568234099093798923" &&
-    message.author.id !== "500000499987382275" &&
-    message.author.id !== "559825881271369795")
+    message.author.id !== "568234099093798923" )
     return message.reply(
       ":x: | você não possui permissão para usar esse comando."
     );
@@ -15,7 +13,7 @@ module.exports.run = async (client, message, args) => {
   const mensagem = new Discord.RichEmbed()
     .setTitle(client.user.username)
     .setDescription(
-      " **Olá, eu sou a Ruiva 🍁, uma bot focada em anúncios e divulgação, estou aqui para te ajudar.**"
+      " **Olá, eu sou a Brunna 🌹, uma bot focada em anúncios e divulgação, estou aqui para te ajudar.**"
     )
     .setThumbnail(client.user.avatarURL)
     .addField(
@@ -34,7 +32,7 @@ module.exports.run = async (client, message, args) => {
       "<a:moneyzin:638096761680035889> Use *ajuda para saber mais.",
       `** **`
     )
-    .setColor("BLACK")
+    .setColor("#ff0000")
     .setFooter(client.user.username, client.useravatarURL)
     .setTimestamp();
 
