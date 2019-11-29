@@ -110,7 +110,7 @@ client.on("guildMemberAdd", async member => {
     .setThumbnail(client.user.avatarURL)
     .addField(
       "=> <a:dancinha:650032107275681802> | Me adicione em seu servidor:",
-      `\n**-----> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=649989944529649684&scope=bot&permissions=11272)**\n`
+      `\n**<a:setafds:650028473775030273> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=649989944529649684&scope=bot&permissions=11272)**\n`
     )
     .addField(
       "💸 Aqui vai algumas informações:",
