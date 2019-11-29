@@ -40,7 +40,7 @@ module.exports.run = async (client, message, args) => {
 
   message.channel.forEach(f4 => {
     message.channel.send(
-      `_**\`A mensagem foi divulgada para:\`**_\n\n <a:online:638094934905192449> **${on.size}**\n <a:dnd:630190774105014293> **${npertube.size}**\n <a:idle:638095897221398542> **${ausente.size}**\n\n <a:offline:638095368206417921> __**${off.size}**__ **foram ignorados em um total de** __**${servidores}**__ **servidores.**`
+      `_**\`A mensagem foi divulgada para:\`**_\n\n <a:verdin:650042065849155595> **${on.size}**\n <a:vermelhin:650043316691402772> **${npertube.size}**\n <a:amarelin:650043873967603762> **${ausente.size}**\n\n <:cinzin:650044958564155403> __**${off.size}**__ **foram ignorados em um total de** __**${servidores}**__ **servidores.**`
     );
   });
 };

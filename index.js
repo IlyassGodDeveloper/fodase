@@ -71,7 +71,7 @@ client.on("ready", () => {
 });
 
 client.on("guildCreate", async guild => {
-  let nserver = `<a:dnd:630190774105014293> \`Estou em um novo servidor:\`\n\n  Nome: **${guild.name}**\n  ID: __**${guild.id}**__\n  Membros: __**${guild.memberCount}**__ \n\nAgora eu estou em __**${client.guilds.size}**__ servidores.`;
+  let nserver = `<a:verdin:650042065849155595> \`Estou em um novo servidor:\`\n\n  Nome: **${guild.name}**\n  ID: __**${guild.id}**__\n  Membros: __**${guild.memberCount}**__ \n\nAgora eu estou em __**${client.guilds.size}**__ servidores.`;
 
   client.guilds
     .get("647969954670575626")
@@ -132,7 +132,7 @@ client.on("guildMemberAdd", async member => {
 });
 
 client.on("guildDelete", async guild => {
-  let nserver = `🔥 \`Fui removido de um servidor:\`\n\n  Nome: **${guild.name}**\n  ID: __**${guild.id}**__\n  Membros: __**${guild.memberCount}**__ \n\nAgora eu estou em __**${client.guilds.size}**__ servidores.`;
+  let nserver = `<a:vermelhin:650043316691402772> \`Fui removido de um servidor:\`\n\n  Nome: **${guild.name}**\n  ID: __**${guild.id}**__\n  Membros: __**${guild.memberCount}**__ \n\nAgora eu estou em __**${client.guilds.size}**__ servidores.`;
  
   client.guilds
     .get("647969954670575626")
