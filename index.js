@@ -105,11 +105,11 @@ client.on("guildMemberAdd", async member => {
   const mensagem = new Discord.RichEmbed()
     .setTitle(client.user.username)
     .setDescription(
-      " **Olá, eu sou a Brunna, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**"
+      " **=> <a:oin:650031266007089192> | Olá, eu sou a Brunna, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**"
     )
     .setThumbnail(client.user.avatarURL)
     .addField(
-      "👑 Me adicione em seu servidor:",
+      "=> <a:dancinha:650032107275681802> | Me adicione em seu servidor:",
       `\n**-----> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=649989944529649684&scope=bot&permissions=11272)**\n`
     )
     .addField(
