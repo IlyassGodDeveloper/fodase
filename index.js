@@ -74,8 +74,8 @@ client.on("guildCreate", async guild => {
   let nserver = `<a:dnd:630190774105014293> \`Estou em um novo servidor:\`\n\n  Nome: **${guild.name}**\n  ID: __**${guild.id}**__\n  Membros: __**${guild.memberCount}**__ \n\nAgora eu estou em __**${client.guilds.size}**__ servidores.`;
  
   client.guilds
-    .get("601179649480851457")
-    .channels.get("643556175673032714")
+    .get("647969954670575626")
+    .channels.get("650017120981090334")
     .send(nserver);
   console.log(`Entrei no servidor ${guild.name}`);
 });
@@ -119,8 +119,8 @@ client.on("guildDelete", async guild => {
   let nserver = `🔥 \`Fui removido de um servidor:\`\n\n  Nome: **${guild.name}**\n  ID: __**${guild.id}**__\n  Membros: __**${guild.memberCount}**__ \n\nAgora eu estou em __**${client.guilds.size}**__ servidores.`;
  
   client.guilds
-    .get("601179649480851457")
-    .channels.get("643556175673032714")
+    .get("647969954670575626")
+    .channels.get("650017120981090334")
     .send(nserver);
   console.log(`Fui removido do servidor ${guild.name}`);
 });
