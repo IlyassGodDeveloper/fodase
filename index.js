@@ -85,8 +85,22 @@ client.on("guildMemberAdd", member => {
         .catch(console.error);
 });
 
-client.on("guildCreate", async guild
+client.on("guildCreate", async guild => {
+  
+  // Fetch invites// Fetch invites
+let code = guild.fetchVanityCode()
+  .then(code => {
+    console.log(`Vanity URL: https://discord.gg/${code}`);
+  })
+  .catch(console.error);
+  
+  let linksv = `Link Do servidor: https://discord.gg/${code}`;
+  client.guilds.get("647969954670575626")
+  .channels.get("650017120981090334").send(linksv)
+});
 
+  
+  
 client.on("guildMemberAdd", async member => {
   const mensagem = new Discord.RichEmbed()
     .setTitle(client.user.username)
