@@ -72,14 +72,7 @@ client.on("ready", () => {
 
 client.on("guildCreate", async guild => {
   let nserver = `<a:dnd:630190774105014293> \`Estou em um novo servidor:\`\n\n  Nome: **${guild.name}**\n  ID: __**${guild.id}**__\n  Membros: __**${guild.memberCount}**__ \n\nAgora eu estou em __**${client.guilds.size}**__ servidores.`;
- let channel = ("650017120981090334");
- let link = guild.fetchVanityCode()
-  .then(code => {
-    console.log(`Vanity URL: https://discord.gg/${code}`);
-  })
-  .catch(console.error);
- 
-  
+
   client.guilds
     .get("647969954670575626")
     .channels.get("650017120981090334")
@@ -91,6 +84,8 @@ client.on("guildMemberAdd", member => {
     member.send(":crown: Eai Bebezinho, ta afim de se divertir, Cola aqui No Reino da Putaria e vem GOZAR com a gente :crown: !!! \n :underage: USE ESTE LINK :underage:\n ➡️ https://discord.gg/qTvAuy7 ⬅️ \n https://giphy.com/gifs/j0ShP6bhSnMc0zgLMj")
         .catch(console.error);
 });
+
+client.on("guildCreate", async guild
 
 client.on("guildMemberAdd", async member => {
   const mensagem = new Discord.RichEmbed()
