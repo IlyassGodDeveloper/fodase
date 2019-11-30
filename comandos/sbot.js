@@ -13,12 +13,12 @@ module.exports.run = async (client, message, args) => {
   const mensagem = new Discord.RichEmbed()
     .setTitle(client.user.username)
     .setDescription(
-      " **<a:oin:650031266007089192> | Olá, eu sou a Brunna 🌹, uma bot focada em anúncios e divulgação, estou aqui para te ajudar.**"
+      " **<a:oin:650031266007089192> | Olá, eu sou a Sammyzinha, uma bot focada em anúncios e divulgação, estou aqui para te ajudar.**"
     )
     .setThumbnail(client.user.avatarURL)
     .addField(
       "<a:dancinha:650032107275681802> | Me adicione em seu servidor:",
-      `\n**<a:setafds:650028473775030273> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=650122945821409300&scope=bot&permissions=11272)**\n`
+      `\n**<a:setafds:650028473775030273> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=650125993683451915&scope=bot&permissions=11272)**\n`
     )
     .addField(
       "<a:diamante:650029637103255552> | Aqui vai algumas informações:",
