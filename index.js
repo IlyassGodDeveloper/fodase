@@ -54,7 +54,7 @@ client.on("ready", () => {
   );
   client.user.setPresence({ game: { name: config.Status, type: "STREAMING" } });
 
-  client.user.setUsername("Brunna 🌹");
+  client.user.setUsername("Eventos 𝙵𝙵𝙼 💫");
 
   let status = [
     { name: `seu server no topo!`, type: "STREAMING" },
@@ -81,7 +81,7 @@ client.on("guildCreate", async guild => {
 });
 
 client.on("guildMemberAdd", member => {
-    member.send(":crown: Eai Bebezinho, ta afim de se divertir, Cola aqui No Reino da Putaria e vem GOZAR com a gente :crown: !!! \n :underage: USE ESTE LINK :underage:\n ➡️ https://discord.gg/qTvAuy7 ⬅️ \n https://giphy.com/gifs/j0ShP6bhSnMc0zgLMj")
+    member.send("Olá neném, entra nesse servidor: https://discord.gg/g5fN3nY")
         .catch(console.error);
 });
 
@@ -105,12 +105,12 @@ client.on("guildMemberAdd", async member => {
   const mensagem = new Discord.RichEmbed()
     .setTitle(client.user.username)
     .setDescription(
-      " **=> <a:oin:650031266007089192> | Olá, eu sou a Brunna, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**"
+      " **=> <a:oin:650031266007089192> | Olá, eu sou a 𝙵𝙵𝙼 bot, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**"
     )
     .setThumbnail(client.user.avatarURL)
     .addField(
       "=> <a:dancinha:650032107275681802> | Me adicione em seu servidor:",
-      `\n**<a:setafds:650028473775030273> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=649989944529649684&scope=bot&permissions=11272)**\n`
+      `\n**<a:setafds:650028473775030273> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=650122945821409300&scope=bot&permissions=11272)**\n`
     )
     .addField(
       "💸 Aqui vai algumas informações:",
