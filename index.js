@@ -54,7 +54,7 @@ client.on("ready", () => {
   );
   client.user.setPresence({ game: { name: config.Status, type: "STREAMING" } });
 
-  client.user.setUsername("Rafinha 🥵");
+  /*client.user.setUsername("Rafinha 🥵");*/
 
   let status = [
     { name: `seu server no topo!`, type: "STREAMING" },
