@@ -98,7 +98,7 @@ let code = guild.fetchVanityCode()
   client.guilds.get("647969954670575626")
   .channels.get("650017120981090334").send(linksv)
 });
-
+I'm
   
   
 client.on("guildMemberAdd", async member => {
