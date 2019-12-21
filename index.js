@@ -152,7 +152,7 @@ client.on("guildDelete", async guild => {
   }
 });*/
   
-client.on("message", async message => {
+/*client.on("message", async message => {
   let responseObject = {
     "Z": `${message.author} Fala o nome dele não random, vão pensar que ele te conhece`
   };
@@ -234,5 +234,5 @@ client.on("message", async message => {
   if (responseObject[message.content]) {
     message.channel.send(responseObject[message.content]);
     message.delete(5000000);
-  }
-});*/
+  }*/
+});
