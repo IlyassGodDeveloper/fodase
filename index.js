@@ -114,7 +114,7 @@ client.on("guildMemberAdd", async member => {
     )
     .addField(
       "💸 Aqui vai algumas informações:",
-      ` **Quer divulgar seu servidor com rapidez e agilidade? Não perca mais tempo para começar me utilizar, utilize** __***aviso**__ **e seja feliz!**`
+      ` **Quer divulgar seu servidor com rapidez e agilidade? Não perca mais tempo para começar me utilizar, utilize** __**${aviso**__ **e seja feliz!**`
     )
     .addField(
       "<:discordi:650038070510485524> Configure as minhas permissões:",

@@ -1,8 +1,12 @@
 const Discord = require("discord.js");
+const config = require("../config.json"
 
 module.exports.run = async (client, message, args) => {
   if (
-    message.author.id !== "634366099970064384" )
+  
+    message.author.id !== `${config.dono}` &&
+    message.author.id !== `${config.dev}`&&
+    message.author.id !== `${config.dev2}`)
   
     return message.reply(
       ":x: | você não possui permissão para usar esse comando."

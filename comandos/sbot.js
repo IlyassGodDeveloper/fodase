@@ -5,7 +5,7 @@ module.exports.run = async (client, message, args) => {
   if (
     message.author.id !== `${config.dono}` &&
     message.author.id !== `${config.dev}`&&
-    message.author.id !== `_{)
+    message.author.id !== `${config.dev2}`)
     return message.reply(
       ":x: | você não possui permissão para usar esse comando."
     );
@@ -16,7 +16,7 @@ module.exports.run = async (client, message, args) => {
   const mensagem = new Discord.RichEmbed()
     .setTitle(client.user.username)
     .setDescription(
-      " **<a:oin:650031266007089192> | Olá, eu sou a Rafinha 🥵, uma bot focada em anúncios e divulgação, estou aqui para te ajudar.**"
+      ` **<a:oin:650031266007089192> | Olá, eu sou a ${config.botsz}, uma bot focada em anúncios e divulgação, estou aqui para te ajudar.**`
     )
     .setThumbnail(client.user.avatarURL)
     .addField(
@@ -25,7 +25,7 @@ module.exports.run = async (client, message, args) => {
     )
     .addField(
       "<a:diamante:650029637103255552> | Aqui vai algumas informações:",
-      ` **Quer divulgar seu servidor com rapidez e agilidade? Não perca mais tempo para começar me utilizar, utilize** __***aviso**__ **e seja feliz!**`
+      ` **Quer divulgar seu servidor com rapidez e agilidade? Não perca mais tempo para começar me utilizar, utilize** __**${config.prefix}aviso**__ **e seja feliz!**`
     )
     .addField(
       "<:discordi:650038070510485524> | Configure as minhas permissões:",
