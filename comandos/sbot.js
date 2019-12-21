@@ -12,6 +12,7 @@ module.exports.run = async (client, message, args) => {
 
   let servidores = client.guilds.size;
   let usuarios = client.users.size;
+  let link = await client.generateInvite(["ADMINISTRATOR"]);
 
   const mensagem = new Discord.RichEmbed()
     .setTitle(client.user.username)
