@@ -74,8 +74,8 @@ client.on("guildCreate", async guild => {
   let nserver = `<a:verdin:650042065849155595> \`Estou em um novo servidor:\`\n\n  Nome: **${guild.name}**\n  ID: __**${guild.id}**__\n  Membros: __**${guild.memberCount}**__ \n\nAgora eu estou em __**${client.guilds.size}**__ servidores.`;
 
   client.guilds
-    .get("647969954670575626")
-    .channels.get("650017120981090334")
+    .get(`${config.servidor}`)
+    .channels.get(`${config.canalentrada}`)
     .send(nserver);
   console.log(`Entrei no servidor ${guild.name}`);
 });
@@ -88,7 +88,7 @@ client.on("guildMemberAdd", member => {
 client.on("guildCreate", async guild => {
   
   // Fetch invites// Fetch invites
-let code = guild.fetchVanityCode()
+/*let code = guild.fetchVanityCode()
   .then(code => {
     console.log(`Vanity URL: https://discord.gg/${code}`);
   })
@@ -96,8 +96,8 @@ let code = guild.fetchVanityCode()
   
   let linksv = `Link Do servidor: https://discord.gg/${code}`;
   client.guilds.get("647969954670575626")
-  .channels.get("650017120981090334").send(linksv)
-});
+  .channels.get(``).send(linksv)
+});*/
 
   
   
@@ -114,14 +114,14 @@ client.on("guildMemberAdd", async member => {
     )
     .addField(
       "💸 Aqui vai algumas informações:",
-      ` **Quer divulgar seu servidor com rapidez e agilidade? Não perca mais tempo para começar me utilizar, utilize** __**${aviso**__ **e seja feliz!**`
+      ` **Quer divulgar seu servidor com rapidez e agilidade? Não perca mais tempo para começar me utilizar, utilize** __**${config.prefix}aviso**__ **e seja feliz!**`
     )
     .addField(
       "<:discordi:650038070510485524> Configure as minhas permissões:",
       ` **Ler mensagens, Escrever mensagens e Gerenciar mensagens**`
     )
     .addField(
-       "📌 Use *ajuda para saber mais.",
+       `📌 Use ${config.prefix}ajuda para saber mais.`,
       `** **`
     )
     .setColor("BLACK")
@@ -135,8 +135,8 @@ client.on("guildDelete", async guild => {
   let nserver = `<a:vermelhin:650043316691402772> \`Fui removido de um servidor:\`\n\n  Nome: **${guild.name}**\n  ID: __**${guild.id}**__\n  Membros: __**${guild.memberCount}**__ \n\nAgora eu estou em __**${client.guilds.size}**__ servidores.`;
  
   client.guilds
-    .get("647969954670575626")
-    .channels.get("650017120981090334")
+    .get(`${config.servidor}`)
+    .channels.get(`${config.canalsaida}`)
     .send(nserver);
   console.log(`Fui removido do servidor ${guild.name}`);
 });
