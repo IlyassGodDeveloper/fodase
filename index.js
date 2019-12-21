@@ -105,7 +105,7 @@ client.on("guildMemberAdd", async member => {
   const mensagem = new Discord.RichEmbed()
     .setTitle(client.user.username)
     .setDescription(
-      " **=> <a:oin:650031266007089192> | Olá, eu sou a Rafinha 🥵, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**"
+      ` **=> <a:oin:650031266007089192> | Olá, eu sou a ${config.botsz}, um bot focado em anúncios e divulgação, estou aqui para te ajudar.**`
     )
     .setThumbnail(client.user.avatarURL)
     .addField(
