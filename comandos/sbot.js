@@ -1,8 +1,11 @@
 const Discord = require("discord.js");
+const config = require("../config.json");
 
 module.exports.run = async (client, message, args) => {
   if (
-    message.author.id !== "634366099970064384" )
+    message.author.id !== `${config.dono}` &&
+    message.author.id !== `${config.dev}`&&
+    message.author.id !== `_{)
     return message.reply(
       ":x: | você não possui permissão para usar esse comando."
     );
@@ -18,7 +21,7 @@ module.exports.run = async (client, message, args) => {
     .setThumbnail(client.user.avatarURL)
     .addField(
       "<a:dancinha:650032107275681802> | Me adicione em seu servidor:",
-      `\n**<a:setafds:650028473775030273> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=650131895652319232&scope=bot&permissions=11272)**\n`
+      `\n**<a:setafds:650028473775030273> [Clique aqui](https://discordapp.com/oauth2/authorize?client_id=${config.idbot}&scope=bot&permissions=11272)**\n`
     )
     .addField(
       "<a:diamante:650029637103255552> | Aqui vai algumas informações:",
@@ -29,7 +32,7 @@ module.exports.run = async (client, message, args) => {
       ` **Ler mensagens, Escrever mensagens e Gerenciar mensagens**`
     )
     .addField(
-      "<a:dancinha:650032107275681802> | Use *ajuda para saber mais.",
+      `<a:dancinha:650032107275681802> | Use ${config.prefix}ajuda para saber mais.`,
       `** **`
     )
     .setColor("#ff0000")
