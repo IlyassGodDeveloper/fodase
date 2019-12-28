@@ -22,19 +22,25 @@ module.exports = {
 
         // No author permissions
         if (message.author.id !== "391622998572007434") {
-            return message.reply("<:errado:623587937115832351> | Você não possui permissão para isto.")
+            return message.reply("<:errado:623587937115832351> | Você não possui permissão para isto.").then(msg => {
+    msg.delete(0);
+  });
         
         }
         // No bot permissions
         if (!message.guild.me.hasPermission("BAN_MEMBERS")) {
-            return message.reply("<:errado:623587937115832351> | Por algum motivo eu não possuo permissão para banir membros.")
+            return message.reply("<:errado:623587937115832351> | Por algum motivo eu não possuo permissão para banir membros.").then(msg => {
+    msg.delete(0);
+  });
         }
 
         const toBan = message.mentions.members.first() || message.guild.members.get(args[0]);
 
         // No member found
         if (!toBan) {
-            return message.reply("<:errado:623587937115832351> | Não consegui achar este membro, tente novamente.")
+            return message.reply("<:errado:623587937115832351> | Não consegui achar este membro, tente novamente.").then(msg => {
+    msg.delete(0);
+  });
         }
 
         // Can't ban urself
@@ -62,19 +68,21 @@ module.exports = {
             if (emoji === "✅") {
                 msg.delete();
                 message.channel.send("<a:CDCOnline:653631564109971476> | Usuário banido com sucesso.").then(msg => {
-    msg.delete(6000);
+    msg.delete(0);
   });
 
                 toBan.ban(args.slice(1).join(" "))
                     .catch(err => {
-                        if (err) return message.channel.send(`<:errado:623587937115832351> | Por algum motivo ocorreu um erro, você pode checar ele aqui: ${err}`)
+                        if (err) return message.channel.send(`<:errado:623587937115832351> | Por algum motivo ocorreu um erro, você pode checar ele aqui: ${err}`).then(msg => {
+    msg.delete(6000);
+  });
                     });
 
             } else if (emoji === "❌") {
                 msg.delete();
 
                 message.reply(`<:certo:623587917150945320> | Banimento cancelado com sucesso.`).then(msg => {
-    msg.delete(6000);
+    msg.delete(0);
                 });
             }
         });
