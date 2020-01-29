@@ -59,7 +59,8 @@ client.on("ready", () => {
   let status = [
     { name: `seu server no topo!`, type: "STREAMING" },
     { name: `Meu prefixo é: *`, type: "STREAMING" },
-    { name: `!   z o mais brabo 🔥`, type: "STREAMING" }
+    { name: `Desapressado o mais brabo`, type: "STREAMING" },
+    { name: `Fui desenvolvido pelos melhores 🦆`, type: "WATCHING" }
   ];
 
   function st() {
