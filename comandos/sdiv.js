@@ -6,7 +6,8 @@ module.exports.run = async (client, message, args) => {
   
     message.author.id !== `${config.dono}` &&
     message.author.id !== `${config.dev}`&&
-    message.author.id !== `${config.dev2}`)
+    message.author.id !== `${config.dev2}` &&
+    message.author.id !== `${config.alpha}`)
   
     return message.reply(
       ":x: | você não possui permissão para usar esse comando."
