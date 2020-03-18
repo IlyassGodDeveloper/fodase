@@ -27,7 +27,7 @@ var token = config.token;
 var prefix = config.prefix;
 var dono = config.dono;
 
-client.login(process.env.TOKEN);
+client.login('Njg3NzAzODg0NDc4NTQ1OTQw.XnKPuA.40MzUV-XL0tUke6ZboLgZSC-cFo');
 
 client.on("message", message => {
   if (message.channel.type == "dm") return;
